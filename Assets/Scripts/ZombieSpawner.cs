@@ -15,10 +15,10 @@ public class ZombieSpawner : MonoBehaviour
     }
      IEnumerator EnemyDrop()
     {
-        while (EnemyCount <30 )
+        while (EnemyCount <8 )
         {
-            xPos = Random.Range(1, 9);
-            zPos = Random.Range(1, 9);
+            xPos = Random.Range(1, 5);
+            zPos = Random.Range(2, 5);
             Instantiate(theEnemy, new Vector3(xPos, 1, zPos), Quaternion.identity);
             yield return new WaitForSeconds(0.1f);
             EnemyCount += 1;
