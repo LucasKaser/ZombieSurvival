@@ -17,50 +17,114 @@ public class WaveSpawner : MonoBehaviour
 
     public Wave[] waves;
     private int nextWave = 0;
+    public Transform[] spawnPoints;
 
     public float timeBetweenWaves = 5;
     public float waveCountDown;
-    public float waveNumber;
+    public float waveNumber =1;
     public Text waveCounter;
+    private float searchCountDown = 1f;
 
     public SpawnState state = SpawnState.COUNTING;
 
     private void Start()
     {
         waveCountDown = timeBetweenWaves;
+        if (spawnPoints.Length == 0)
+        {
+            Debug.LogError("No spawn points");
+        }
     }
 
     void Update()
     {
         if (waveCountDown <= 0)
         {
-            if (state != SpawnState.SPAWNING)
+            if( state == SpawnState.WAITING)
             {
-                StartCoroutine(SpawnWave(waves[nextWave]));
-                
-            }
-            waveCounter.text = "" + waveNumber;
-                
-               
-            
+                //check if enemies are still alive
+                if (!EnemyIsAlive())
+                {
+                    WaveCompleted();
+                    return;
+                        
+                        }
 
-        }
+                else
+                {
+                    return;
+                }
+               
+
+
+
+            }
+
+
+            if (waveCountDown <= 0)
+            {
+                if (state != SpawnState.SPAWNING)
+                {
+                    StartCoroutine(SpawnWave(waves[nextWave]));
+
+                }
+            }
+            
+               
+              
+           }
         else
         {
             waveCountDown -= Time.deltaTime;
         }
         
         
-
+        void WaveCompleted ()
+        {
+            Debug.Log("Wave Completed!");
+            state = SpawnState.COUNTING;
+            waveCountDown = timeBetweenWaves;
+            waveNumber += 1;
+            waveCounter.text = "" + waveNumber;
+            if (nextWave + 1 > waves.Length - 1)
+            {
+                nextWave = 0;
+                Debug.Log("all waves complete");
+            }
+            else
+            {
+                nextWave++;
+            }
+           
+        }
        
     }
+    bool EnemyIsAlive()
+    {
+        searchCountDown -= Time.deltaTime;
+        if (searchCountDown <= 0f)
+        {
+            searchCountDown = 1f;
+            if (GameObject.FindGameObjectWithTag("Zombie") == null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+     
+        return true;
+    }
+
     IEnumerator SpawnWave( Wave _wave)
     {
+        Debug.Log("Spawning Wave:" + _wave.name);
         state = SpawnState.SPAWNING;
         for (int i = 0; i < _wave.count; i++)
         {
             SpawnEnemy(_wave.enemy);
             yield return new WaitForSeconds(1f / _wave.rate);
+           
         }
         state = SpawnState.WAITING;
         yield break;
@@ -69,6 +133,14 @@ public class WaveSpawner : MonoBehaviour
     void SpawnEnemy(Transform _enemy)
     {
         Debug.Log("Spawning ENemy: " + _enemy.name);
+        if(spawnPoints.Length == 0)
+        {
+            
+        }
+
+        Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+        Instantiate(_enemy, _sp.position, _sp.rotation);
+    
     }
 
 
