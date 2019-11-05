@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 4296205122012367708}
   - component: {fileID: 4296205122013464988}
   - component: {fileID: 4296205122015367672}
+  - component: {fileID: 1321458014}
   m_Layer: 0
   m_Name: M1911
   m_TagString: Untagged
@@ -331,6 +332,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: b812e42521a5a27499e76cc5ed56e3ac, type: 3}
+--- !u!65 &1321458014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4296205122015401816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.19, z: 0.31}
+  m_Center: {x: 0, y: -0.02, z: -0.03}
 --- !u!1 &4296205122015401818
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +355,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4296205122015759226}
   - component: {fileID: 4296205122015367668}
-  - component: {fileID: 4296205122015367675}
   - component: {fileID: 4296205122015367669}
   - component: {fileID: 4296205122015367674}
   m_Layer: 0
@@ -375,7 +388,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4296205122015401818}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -383,20 +396,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!136 &4296205122015367675
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4296205122015401818}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.18484974
-  m_Height: 0.36969948
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.011370778, z: -0.011311531}
 --- !u!65 &4296205122015367669
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -408,8 +407,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.49}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.16, y: 0.19, z: 0.31}
+  m_Center: {x: 0, y: -0.02, z: -0.03}
 --- !u!114 &4296205122015367674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,9 +422,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
+  m_snapPosition: 1
+  m_snapOrientation: 1
+  m_snapOffset: {fileID: 605472858867202329, guid: 3646b49861a102b42a566e7e1427c476,
+    type: 3}
   m_grabPoints: []
 --- !u!1 &4296205122015401820
 GameObject:
