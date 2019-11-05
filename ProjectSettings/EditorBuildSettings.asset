@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Oculus/SampleFramework/Usage/AvatarGrab.unity
+    guid: 941c413af7c367d40aab0725f5a59530
   m_configObjects: {}
