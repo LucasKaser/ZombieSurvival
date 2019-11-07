@@ -873,7 +873,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1781099363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,24 +1008,11 @@ Transform:
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1781099370
-=======
---- !u!114 &1630740405
->>>>>>> c3f7d22e4fece5c9b406e920859bac786dd0d7b1
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1781099363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 708b030e77aa8a747abc32b01cd316ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 921731413}
-  chaseDistance: 10
-=======
   m_GameObject: {fileID: 1630740399}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1038,7 +1024,6 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
->>>>>>> c3f7d22e4fece5c9b406e920859bac786dd0d7b1
 --- !u!1001 &1868614825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1286,78 +1271,6 @@ Camera:
   m_GameObject: {fileID: 2134033516}
   m_Enabled: 1
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7406604418490071614, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_Name
-      value: OVRPlayerController
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490071614, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406604418490557968, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca6228f4817ce6345b97419ac0c1dbc5, type: 3}
-=======
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_projectionMatrixMode: 1
@@ -3267,4 +3180,3 @@ CapsuleCollider:
   m_Height: 0.1005787
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
->>>>>>> c3f7d22e4fece5c9b406e920859bac786dd0d7b1
