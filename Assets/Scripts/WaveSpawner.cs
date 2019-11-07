@@ -135,7 +135,7 @@ public class WaveSpawner : MonoBehaviour
         Debug.Log("Spawning ENemy: " + _enemy.name);
         if(spawnPoints.Length == 0)
         {
-            
+             
         }
 
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
