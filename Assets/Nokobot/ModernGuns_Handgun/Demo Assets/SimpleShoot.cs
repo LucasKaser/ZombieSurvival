@@ -20,13 +20,11 @@ public class SimpleShoot : MonoBehaviour
             barrelLocation = transform;
     }
 
-    void Update()
+    public void TriggerShoot()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            GetComponent<Animator>().SetTrigger("Fire");
-        }
+        GetComponent<Animator>().SetTrigger("Fire");
     }
+
 
     void Shoot()
     {

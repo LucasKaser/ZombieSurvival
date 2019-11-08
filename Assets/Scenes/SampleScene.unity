@@ -524,7 +524,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-<<<<<<< HEAD
 --- !u!1001 &823838884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -594,39 +593,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a041205f62419f439a714f534390f0d, type: 3}
-=======
---- !u!1 &921731413
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 7406604418490071614, guid: ca6228f4817ce6345b97419ac0c1dbc5,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 921731414}
-  m_Layer: 0
-  m_Name: 
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &921731414
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921731413}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 67fbb8b4a3e61c178abe5a177f01edda1668e937
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,11 +986,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 6
-=======
+
   m_RootOrder: 7
->>>>>>> 67fbb8b4a3e61c178abe5a177f01edda1668e937
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1781099363
 GameObject:
@@ -1039,10 +1002,7 @@ GameObject:
   - component: {fileID: 1781099367}
   - component: {fileID: 1781099366}
   - component: {fileID: 1781099365}
-<<<<<<< HEAD
-=======
   - component: {fileID: 1781099371}
->>>>>>> 67fbb8b4a3e61c178abe5a177f01edda1668e937
   - component: {fileID: 1781099364}
   m_Layer: 0
   m_Name: Capsule
@@ -1456,7 +1416,6 @@ GameObject:
 --- !u!1001 &2491247475879459473
 PrefabInstance:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2760,8 +2719,6 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271707562261635}
-=======
->>>>>>> 67fbb8b4a3e61c178abe5a177f01edda1668e937
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
