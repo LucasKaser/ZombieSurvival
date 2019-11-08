@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605472858867202329}
   m_Layer: 0
-  m_Name: GunSnap
+  m_Name: rifel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222174063286146451}
   m_LocalRotation: {x: -0.70105743, y: 0.7064338, z: 0.092296, w: -0.030843586}
-  m_LocalPosition: {x: -0.04, y: 0, z: 0.02}
+  m_LocalPosition: {x: -0.02, y: -0.01, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
