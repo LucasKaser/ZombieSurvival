@@ -30,5 +30,6 @@ public class NavMove : MonoBehaviour
         {
             agent.destination = home;
         }
+
     }
 }
