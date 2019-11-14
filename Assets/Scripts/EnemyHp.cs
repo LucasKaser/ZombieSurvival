@@ -30,12 +30,12 @@ public class EnemyHp : MonoBehaviour
         {
             GetComponent<Animator>().enabled = false;
             StartCoroutine(death());
-<<<<<<< HEAD
+
             
-=======
+
             Player.GetComponent<PlayerPoints>().points += 50;
 
->>>>>>> ac5b52cc9fd3ae804a978efb3394d9dd30a5f79d
+
         }
 
     }
