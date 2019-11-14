@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4278816300486822}
   - component: {fileID: 33540230160870462}
   - component: {fileID: 23970209400704162}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pistol_45mm_bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,9 +89,9 @@ GameObject:
   - component: {fileID: 4617562620070314}
   - component: {fileID: 54754061181521972}
   - component: {fileID: 135553686393699058}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet_45mm_Bullet
-  m_TagString: Untagged
+  m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,8 +104,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900734910723676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.018263}
+  m_LocalScale: {x: 0.54343, y: 0.54343, z: 0.54343}
   m_Children:
   - {fileID: 4278816300486822}
   m_Father: {fileID: 0}
