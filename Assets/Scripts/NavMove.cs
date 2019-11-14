@@ -9,15 +9,31 @@ public class NavMove : MonoBehaviour
     public GameObject player;
     public float chaseDistance = 10;
     private Vector3 home;
+    private Animator animator;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         home = transform.position;
         agent = GetComponent<NavMeshAgent>();
+        
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(gameObject.tag == "Player")
+        {
+            animator.SetBool("Attacking", true);
+
+        }else
+        {
+            animator.SetBool("Attacking", false);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,6 +46,9 @@ public class NavMove : MonoBehaviour
         {
             agent.destination = home;
         }
+      
+
+        
 
     }
 }

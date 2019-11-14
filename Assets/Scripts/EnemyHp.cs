@@ -18,10 +18,12 @@ public class EnemyHp : MonoBehaviour
     private void Update()
     {
 
+
         if (health <= 0)
         {
             GetComponent<Animator>().enabled = false;
             StartCoroutine(death());
+            
         }
 
     }
