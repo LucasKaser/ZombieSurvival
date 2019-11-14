@@ -12,7 +12,7 @@ public class DoorBuy : MonoBehaviour
     void Start()
     {
         ovrgrabbable = GetComponent<OVRGrabbable>();
-
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
