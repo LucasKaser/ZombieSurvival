@@ -1096,6 +1096,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   Enenmy: {fileID: 2287176287124802477}
+  Player: {fileID: 1871035280424954892, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
+  wait: 0
 --- !u!114 &5428916192176976369
 MonoBehaviour:
   m_ObjectHideFlags: 0
