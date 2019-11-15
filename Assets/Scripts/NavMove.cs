@@ -9,7 +9,7 @@ public class NavMove : MonoBehaviour
     public GameObject player;
     public float chaseDistance = 10;
     private Vector3 home;
-    private Animator animator;
+   
 
 
 
@@ -23,17 +23,7 @@ public class NavMove : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(gameObject.tag == "Player")
-        {
-            animator.SetBool("Attacking", true);
-
-        }else
-        {
-            animator.SetBool("Attacking", false);
-        }
-    }
+   
     // Update is called once per frame
     void Update()
     {
