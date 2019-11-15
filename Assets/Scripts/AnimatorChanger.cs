@@ -11,20 +11,21 @@ public class AnimatorChanger : MonoBehaviour
         Animator = GetComponent<Animator>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider collision)
     {
-       if(collision.gameObject.tag == "Player")
-        {
-            Animator.SetBool("Attacking", false);
-            Debug.Log("Bruh");
-        }else
+        if(collision.gameObject.tag == "Player")
         {
             Animator.SetBool("Attacking", true);
         }
 
-            
-
-        
+    }
+    private void OnTriggerExit(Collider collision)
+    {
+       if(collision.gameObject.tag == "Player")
+        {
+            Animator.SetBool("Attacking", false);
+        }
     }
 
 }
