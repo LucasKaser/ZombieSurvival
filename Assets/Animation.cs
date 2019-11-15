@@ -19,7 +19,12 @@ public class Animation : MonoBehaviour
             Debug.Log("Ligma moment"); 
 
         }
-        
+        else
+        {
+            Animator.SetBool("Attacking", false);
+
+        }
+
     }
     private void OnTriggerExit(Collider collision)
     {
@@ -27,6 +32,11 @@ public class Animation : MonoBehaviour
         {
             Animator.SetBool("Attacking", true);
             Debug.Log("Bruh moment");
+        }
+        else
+        {
+            Animator.SetBool("Attacking", false);
+
         }
     }
     private void OnTriggerStay(Collider collision)
