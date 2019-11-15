@@ -19,7 +19,7 @@ public class Animation : MonoBehaviour
             Debug.Log("Ligma moment"); 
 
         }
-        else
+        else if(collision.gameObject.tag != "Player")
         {
             Animator.SetBool("Attacking", false);
 
@@ -33,7 +33,7 @@ public class Animation : MonoBehaviour
             Animator.SetBool("Attacking", true);
             Debug.Log("Bruh moment");
         }
-        else
+        else if (collision.gameObject.tag != "Player")
         {
             Animator.SetBool("Attacking", false);
 
