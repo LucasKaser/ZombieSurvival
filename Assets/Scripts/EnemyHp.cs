@@ -9,7 +9,7 @@ public class EnemyHp : MonoBehaviour
     public int health = 5;
     public Animator Enenmy;
     public GameObject Player;
-
+    public int wait;
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -19,7 +19,10 @@ public class EnemyHp : MonoBehaviour
         if (collision.gameObject.tag == "Damage")
         {
             health--;
-            Player.GetComponent<PlayerPoints>().points += 10;
+            if (health > 0)
+            {
+                Player.GetComponent<PlayerPoints>().points += 10;
+            }
         }
     }
     private void Update()
@@ -28,7 +31,10 @@ public class EnemyHp : MonoBehaviour
 
         if (health <= 0)
         {
-            GetComponent<Animator>().enabled = false;
+            if(GetComponent<Animator>() != null)
+            {
+                  GetComponent<Animator>().enabled = false;
+            }
             StartCoroutine(death());
 
             
@@ -43,7 +49,7 @@ public class EnemyHp : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(wait);
             Destroy(gameObject);
 
 

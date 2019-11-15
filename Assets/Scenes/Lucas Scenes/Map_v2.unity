@@ -2842,6 +2842,7 @@ MonoBehaviour:
   health: 5
   Enenmy: {fileID: 0}
   Player: {fileID: 0}
+  wait: 1
 --- !u!136 &1408333347
 CapsuleCollider:
   m_ObjectHideFlags: 0
