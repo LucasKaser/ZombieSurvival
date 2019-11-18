@@ -1097,7 +1097,7 @@ MonoBehaviour:
   health: 5
   Enenmy: {fileID: 2287176287124802477}
   Player: {fileID: 1871035280424954892, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
-  wait: 0
+  wait: 20
 --- !u!65 &1553191189471192584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1109,8 +1109,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.793793, z: 1.0255694}
-  m_Center: {x: 1.5323842e-16, y: 0.8787333, z: 0.0127847195}
+  m_Size: {x: 1, y: 2.2014, z: 0.76220274}
+  m_Center: {x: -1.7809376e-16, y: 0.67492974, z: -0.11889863}
 --- !u!114 &3277243234886118648
 MonoBehaviour:
   m_ObjectHideFlags: 0

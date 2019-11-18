@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 
@@ -34,6 +35,9 @@ public class EnemyHp : MonoBehaviour
             if(GetComponent<Animator>() != null)
             {
                   GetComponent<Animator>().enabled = false;
+                GetComponent<NavMove>().enabled = false;
+                GetComponent<NavMeshAgent>().enabled = false;
+
             }
             StartCoroutine(death());
 
