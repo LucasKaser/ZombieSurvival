@@ -1644,29 +1644,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!1 &825633767 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1871035280424954892, guid: dfd67b2a633ebba4e86782dcfb0202b2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1682640274}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &825633769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825633767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e9be0461937f947a91dd4672ee48fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 15
-  Enemy: {fileID: 2287176287124802384, guid: 23f6f2ea7d9b7504f86f50a71ae4484f, type: 3}
-  wait: 0
-  Healthre: 0
-  healthincrease: 0
 --- !u!1 &827693796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,10 +2945,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: Yes
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1871035280424954892, guid: dfd67b2a633ebba4e86782dcfb0202b2,
         type: 3}
       propertyPath: m_Name
@@ -3032,12 +3005,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1501022769, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
 --- !u!1 &1695362269
 GameObject:
