@@ -11,6 +11,7 @@ public class EnemyHp : MonoBehaviour
     public Animator Enenmy;
     public GameObject Player;
     public int wait;
+    public bool dead;
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -39,11 +40,13 @@ public class EnemyHp : MonoBehaviour
                 GetComponent<NavMeshAgent>().enabled = false;
 
             }
-            StartCoroutine(death());
-
+            if (!dead)
+            {
+                StartCoroutine(death());
+            }
             
 
-            Player.GetComponent<PlayerPoints>().points += 50;
+            
 
 
         }
@@ -53,7 +56,10 @@ public class EnemyHp : MonoBehaviour
     {
         while (true)
         {
+            dead = true;
+            Player.GetComponent<PlayerPoints>().points += 50;
             yield return new WaitForSeconds(wait);
+
             Destroy(gameObject);
 
 

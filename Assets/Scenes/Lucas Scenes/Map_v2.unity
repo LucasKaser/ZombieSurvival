@@ -2929,6 +2929,7 @@ MonoBehaviour:
   Enenmy: {fileID: 0}
   Player: {fileID: 0}
   wait: 1
+  dead: 0
 --- !u!136 &1408333347
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3242,6 +3243,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507382720}
   m_Mesh: {fileID: 4300084, guid: c7f7a9ec09a97d144963b6dd16448dc3, type: 3}
+--- !u!1 &1517101344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5131170768089392871, guid: 0c418f8aeeaa7ed4aa7feaf0f1b0d21b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1861436021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1517101347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517101344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 1
+  m_snapOrientation: 1
+  m_snapOffset: {fileID: 605472858867202329, guid: 3646b49861a102b42a566e7e1427c476,
+    type: 3}
+  m_grabPoints: []
 --- !u!1 &1521141952
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,7 +3904,7 @@ PrefabInstance:
     - target: {fileID: 4191349968972851572, guid: 2637e5c3332e43a40835785787b706d3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4191349968972851572, guid: 2637e5c3332e43a40835785787b706d3,
         type: 3}
@@ -4261,7 +4286,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5129905333904602557, guid: 0c418f8aeeaa7ed4aa7feaf0f1b0d21b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c418f8aeeaa7ed4aa7feaf0f1b0d21b, type: 3}
 --- !u!1001 &1891797248
 PrefabInstance:
@@ -4569,6 +4595,23 @@ MonoBehaviour:
   cost: 5
   playerpoints: 0
   Player: {fileID: 0}
+  wait: 0
+--- !u!54 &2008196540
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008196535}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2013328381
 GameObject:
   m_ObjectHideFlags: 0
