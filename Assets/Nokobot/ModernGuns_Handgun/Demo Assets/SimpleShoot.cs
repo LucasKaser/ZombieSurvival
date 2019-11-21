@@ -13,7 +13,7 @@ public class SimpleShoot : MonoBehaviour
     public AudioSource bang;
     public AudioClip bang2;
     public float shotPower = 100f;
-
+    public bool shoot;
     void Start()
     {
         if (barrelLocation == null)
@@ -23,6 +23,15 @@ public class SimpleShoot : MonoBehaviour
     public void TriggerShoot()
     {
         GetComponent<Animator>().SetTrigger("Fire");
+        
+    }
+    private void Update()
+    {
+        if (shoot)
+        {
+            shoot = false;
+            TriggerShoot();
+        }
     }
 
 
