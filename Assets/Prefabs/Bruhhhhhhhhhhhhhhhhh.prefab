@@ -1098,6 +1098,7 @@ MonoBehaviour:
   Enenmy: {fileID: 2287176287124802477}
   Player: {fileID: 1871035280424954892, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
   wait: 20
+  dead: 0
 --- !u!65 &1553191189471192584
 BoxCollider:
   m_ObjectHideFlags: 0

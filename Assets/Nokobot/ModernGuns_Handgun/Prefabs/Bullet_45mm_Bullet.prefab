@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4617562620070314}
   - component: {fileID: 54754061181521972}
   - component: {fileID: 135553686393699058}
+  - component: {fileID: 3970072327161211936}
   m_Layer: 10
   m_Name: Bullet_45mm_Bullet
   m_TagString: Damage
@@ -141,6 +142,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0, z: 0.04}
+--- !u!114 &3970072327161211936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900734910723676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5483edea437d3549b201c8a20a2c702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5150149883694976740
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,8 +16,9 @@ public class EnemyHp : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
     }
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Damage")
         {
             health--;
