@@ -5,21 +5,20 @@ using UnityEngine.AI;
 
 
 
-public class EnemyHp : MonoBehaviour
+public class SubHP : MonoBehaviour
 {
     public int health = 5;
     public Animator Enenmy;
     public GameObject Player;
     public int wait;
     public bool dead;
+    public GameObject zombie;
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
     }
-
-    void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Damage")
         {
             health--;
@@ -29,23 +28,16 @@ public class EnemyHp : MonoBehaviour
             }
         }
     }
-
     private void Update()
     {
 
 
         if (health <= 0)
         {
-            if(GetComponent<Animator>() != null)
-            {
-                  GetComponent<Animator>().enabled = false;
-                GetComponent<NavMove>().enabled = false;
-                GetComponent<NavMeshAgent>().enabled = false;
-
-            }
             if (!dead)
             {
-                StartCoroutine(death());
+                zombie.GetComponent<EnemyHp>().health = 0;
+                dead = true;
             }
             
 
@@ -55,18 +47,5 @@ public class EnemyHp : MonoBehaviour
         }
 
     }
-    IEnumerator death()
-    {
-        while (true)
-        {
-            dead = true;
-            Player.GetComponent<PlayerPoints>().points += 50;
-            yield return new WaitForSeconds(wait);
-            Destroy(gameObject);
-
-
-
-
-        }
-    }
+ 
 }

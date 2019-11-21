@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 8657803919520181009}
   - component: {fileID: 857738583175821762}
   - component: {fileID: 2678004508589178366}
+  - component: {fileID: 7651633516916999064}
   - component: {fileID: 4677390340404253965}
   m_Layer: 0
   m_Name: Base HumanRCalf
@@ -179,6 +180,24 @@ CapsuleCollider:
   m_Height: 0.543684
   m_Direction: 0
   m_Center: {x: -0.2708084, y: -0.018566031, z: 0.008812471}
+--- !u!114 &7651633516916999064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146231026508414955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5524ab77639d25c46b72a6d22e30b121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  Enenmy: {fileID: 0}
+  Player: {fileID: 0}
+  wait: 0
+  dead: 0
+  zombie: {fileID: 0}
 --- !u!144 &4677390340404253965
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -190,7 +209,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.39294374, y: -0.00001674809, z: 0.000026993454}
+  m_ConnectedAnchor: {x: -0.39294347, y: 0.000008220668, z: 0.00002746284}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -550,7 +569,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.47087285, y: 0.07066846, z: 0.00000011965689}
+  m_ConnectedAnchor: {x: -0.47087914, y: 0.070632875, z: 0.000000026524681}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -738,7 +757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972708998404271331}
   m_LocalRotation: {x: 0.49912703, y: -0.50087154, z: -0.49912694, w: 0.5008715}
-  m_LocalPosition: {x: 0, y: 0.87985283, z: -0.288}
+  m_LocalPosition: {x: 0, y: 0.87985283, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5020714706941711185}
@@ -912,7 +931,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2657502, y: -0.0000019147997, z: 0.0000069774665}
+  m_ConnectedAnchor: {x: -0.26574683, y: 0.000022917991, z: 0.000007102263}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1005,7 +1024,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2287176287124802384}
-  m_LocalRotation: {x: -0, y: -1, z: 0, w: -0.0000001872535}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 803.39777, y: 0.0000038146973, z: 907.591}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1026,7 +1045,7 @@ Transform:
   - {fileID: 5365029689878529745}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2287176287124802477
 Animator:
   serializedVersion: 3
@@ -1064,8 +1083,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.8
-  m_BaseOffset: 0.21
+  m_Height: 1.74
+  m_BaseOffset: -0.03
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &2287176287124802479
@@ -1108,10 +1127,10 @@ BoxCollider:
   m_GameObject: {fileID: 2287176287124802384}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.7547016, z: 0.9158914}
-  m_Center: {x: -1.2906275e-15, y: 1.0522804, z: -0.16095293}
+  m_Size: {x: 0.5606079, y: 1.7711657, z: 0.38360596}
+  m_Center: {x: 0.029754639, y: 0.8910807, z: 0.034820557}
 --- !u!114 &3277243234886118648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1405,7 +1424,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2657507, y: -0.0000016167758, z: -0.0000072866706}
+  m_ConnectedAnchor: {x: -0.2657472, y: 0.000022914257, z: -0.000007143247}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -1908,7 +1927,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0.66, y: 1.72, z: 3.68}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.27302024, y: -0.000012256207, z: 0.0000012596138}
+  m_ConnectedAnchor: {x: -0.2730313, y: 0.000010354445, z: 0.00000078231096}
   serializedVersion: 2
   m_SwingAxis: {x: 1.83, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2353,6 +2372,7 @@ GameObject:
   - component: {fileID: 452480677911622621}
   - component: {fileID: 4305844516456064899}
   - component: {fileID: 564868986930946789}
+  - component: {fileID: 3479501191731785492}
   - component: {fileID: 9124454100281832321}
   m_Layer: 0
   m_Name: Base HumanLLegCalf
@@ -2406,6 +2426,24 @@ CapsuleCollider:
   m_Height: 0.55272657
   m_Direction: 0
   m_Center: {x: -0.27598366, y: -0.006839893, z: 0.0000073080873}
+--- !u!114 &3479501191731785492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5386706458191232009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5524ab77639d25c46b72a6d22e30b121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  Enenmy: {fileID: 0}
+  Player: {fileID: 0}
+  wait: 0
+  dead: 0
+  zombie: {fileID: 0}
 --- !u!144 &9124454100281832321
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2417,7 +2455,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.39294356, y: -0.0000064157066, z: -0.000029176474}
+  m_ConnectedAnchor: {x: -0.3929433, y: 0.000018436229, z: -0.000029474497}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -2744,6 +2782,7 @@ GameObject:
   - component: {fileID: 6918547649803208065}
   - component: {fileID: 3728156134224985658}
   - component: {fileID: 2531140978791165159}
+  - component: {fileID: 6100733609467392854}
   - component: {fileID: 2178643928366836047}
   m_Layer: 0
   m_Name: Base HumanRThigh
@@ -2797,6 +2836,24 @@ CapsuleCollider:
   m_Height: 0.39293963
   m_Direction: 0
   m_Center: {x: -0.19646981, y: 0, z: 0}
+--- !u!114 &6100733609467392854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6220070615089534858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5524ab77639d25c46b72a6d22e30b121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  Enenmy: {fileID: 0}
+  Player: {fileID: 0}
+  wait: 0
+  dead: 0
+  zombie: {fileID: 0}
 --- !u!144 &2178643928366836047
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2808,7 +2865,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.016426858, y: 0.044771396, z: -0.08392325}
+  m_ConnectedAnchor: {x: -0.01642677, y: 0.04479634, z: -0.08392334}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -2853,6 +2910,7 @@ GameObject:
   - component: {fileID: 5020714706941711185}
   - component: {fileID: 3700362147664484801}
   - component: {fileID: 4259670906101147063}
+  - component: {fileID: 8229816216276449703}
   - component: {fileID: 3718856495931905572}
   m_Layer: 0
   m_Name: Base HumanLLegThigh
@@ -2906,6 +2964,24 @@ CapsuleCollider:
   m_Height: 0.39293936
   m_Direction: 0
   m_Center: {x: -0.19646968, y: 0, z: 0}
+--- !u!114 &8229816216276449703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6469250553087257947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5524ab77639d25c46b72a6d22e30b121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  Enenmy: {fileID: 0}
+  Player: {fileID: 0}
+  wait: 0
+  dead: 0
+  zombie: {fileID: 0}
 --- !u!144 &3718856495931905572
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2917,7 +2993,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.016426798, y: 0.044771485, z: 0.08392343}
+  m_ConnectedAnchor: {x: -0.01642671, y: 0.04479637, z: 0.08392334}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -3231,7 +3307,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0.66, y: 1.72, z: 3.68}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2730207, y: -0.000012073668, z: -0.0000011166557}
+  m_ConnectedAnchor: {x: -0.27303126, y: 0.000010227785, z: -0.0000007334164}
   serializedVersion: 2
   m_SwingAxis: {x: 1.83, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -3340,7 +3416,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.30387998, y: -0.036891565, z: -0.1775511}
+  m_ConnectedAnchor: {x: -0.30387557, y: -0.036866996, z: -0.17755122}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -3479,7 +3555,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.30387944, y: -0.036891546, z: 0.17755143}
+  m_ConnectedAnchor: {x: -0.3038751, y: -0.036867075, z: 0.17755131}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -3618,7 +3694,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2708022, y: 0.04974833, z: 0.000000074505806}
+  m_ConnectedAnchor: {x: -0.27080232, y: 0.04971221, z: -0.000000014901161}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:

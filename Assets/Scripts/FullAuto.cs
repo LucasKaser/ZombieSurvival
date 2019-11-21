@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleShoot : MonoBehaviour
+public class FullAuto : MonoBehaviour
 {
 
     public GameObject bulletPrefab;
@@ -22,18 +22,22 @@ public class SimpleShoot : MonoBehaviour
 
     public void TriggerShoot()
     {
-        GetComponent<Animator>().SetTrigger("Fire");
-
+        GetComponent<Animator>().SetBool("Fire", true);
+        
     }
-
-
-    
+    public void stopShoot()
+    {
+        GetComponent<Animator>().SetBool("Fire", false);
+    }
     private void Update()
     {
         if (shoot)
         {
-            shoot = false;
-            TriggerShoot();
+            GetComponent<Animator>().SetBool("Fire", true);
+        }
+        if (!shoot)
+        {
+            GetComponent<Animator>().SetBool("Fire", false);
         }
     }
 
