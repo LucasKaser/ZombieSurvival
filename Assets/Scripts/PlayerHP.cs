@@ -13,7 +13,8 @@ public class PlayerHP : MonoBehaviour
     public float waiting;
     public int healthre;
     public Text Health;
-    
+   
+     
     
 
   
@@ -66,10 +67,11 @@ public class PlayerHP : MonoBehaviour
                 health = 15;
             }
         }
+        
 
       
       
-
+        
 
 
 

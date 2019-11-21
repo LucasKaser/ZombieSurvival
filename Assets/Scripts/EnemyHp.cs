@@ -12,6 +12,7 @@ public class EnemyHp : MonoBehaviour
     public GameObject Player;
     public int wait;
     public bool dead;
+    
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
