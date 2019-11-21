@@ -25,12 +25,19 @@ public class FullAuto : MonoBehaviour
         GetComponent<Animator>().SetBool("Fire", true);
         
     }
+    public void stopShoot()
+    {
+        GetComponent<Animator>().SetBool("Fire", false);
+    }
     private void Update()
     {
         if (shoot)
         {
-            shoot = false;
-            TriggerShoot();
+            GetComponent<Animator>().SetBool("Fire", true);
+        }
+        if (!shoot)
+        {
+            GetComponent<Animator>().SetBool("Fire", false);
         }
     }
 

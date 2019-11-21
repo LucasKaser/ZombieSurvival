@@ -22,13 +22,10 @@ public class SimpleShoot : MonoBehaviour
 
     public void TriggerShoot()
     {
-        GetComponent<Animator>().SetBool("Fire", true);
+        GetComponent<Animator>().SetTrigger("Fire");
 
     }
-    public void stopShoot()
-    {
-        GetComponent<Animator>().SetBool("Fire", false);
-    }
+
 
     
     private void Update()

@@ -11,7 +11,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -125,7 +125,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1373428222
+--- !u!114 &912137760895388556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,10 +134,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 4598748979486434742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3192ebe740b25b47bcfdacdbd11f738, type: 3}
+  m_Script: {fileID: 11500000, guid: e60ee531c2d9e534789a827a5a23bb98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shootingbutton: 8192
+--- !u!114 &2715425296185929118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4598748979486434742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664c05e23b1241043b32c09370d615c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 0}
+  casingPrefab: {fileID: 0}
+  muzzleFlashPrefab: {fileID: 0}
+  barrelLocation: {fileID: 0}
+  casingExitLocation: {fileID: 0}
+  bang: {fileID: 0}
+  bang2: {fileID: 0}
+  shotPower: 100
+  shoot: 0
 --- !u!1 &9072886226394545379
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,8 +351,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.5129
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2059627184895600352, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
 --- !u!1 &4598748979486434742 stripped
 GameObject:

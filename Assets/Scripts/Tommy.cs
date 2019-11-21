@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Tommy : MonoBehaviour { 
 
-    private SimpleShoot simpleShoot;
+    private FullAuto simpleShoot;
     private OVRGrabbable ovrgrabbable;
     public OVRInput.Button shootingbutton;
 
     // Start is called before the first frame update
     void Start()
     {
-        simpleShoot = GetComponent<SimpleShoot>();
+        simpleShoot = GetComponent<FullAuto>();
         ovrgrabbable = GetComponent<OVRGrabbable>();
     }
 
@@ -20,11 +20,11 @@ public class Tommy : MonoBehaviour {
     {
         if(ovrgrabbable.isGrabbed && OVRInput.GetDown(shootingbutton, ovrgrabbable.grabbedBy.GetController()))
         {
-            simpleShoot.TriggerShoot();
+            simpleShoot.shoot = true;
         }
         if (ovrgrabbable.isGrabbed && OVRInput.GetUp(shootingbutton, ovrgrabbable.grabbedBy.GetController()))
         {
-            simpleShoot.TriggerShoot();
+            simpleShoot.shoot = false;
         }
     }
 }
