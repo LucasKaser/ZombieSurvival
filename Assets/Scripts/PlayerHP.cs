@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class PlayerHP : MonoBehaviour
 {
@@ -10,7 +12,9 @@ public class PlayerHP : MonoBehaviour
     public float wait;
     public float waiting;
     public int healthre;
-    
+    public Text Health;
+   
+     
     
 
   
@@ -63,10 +67,11 @@ public class PlayerHP : MonoBehaviour
                 health = 15;
             }
         }
+        
 
       
       
-
+        
 
 
 
