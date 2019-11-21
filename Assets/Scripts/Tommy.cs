@@ -22,6 +22,9 @@ public class Tommy : MonoBehaviour {
         {
             simpleShoot.TriggerShoot();
         }
-        
+        if (ovrgrabbable.isGrabbed && OVRInput.GetUp(shootingbutton, ovrgrabbable.grabbedBy.GetController()))
+        {
+            simpleShoot.TriggerShoot();
+        }
     }
 }
