@@ -12,22 +12,11 @@ public class EnemyHp : MonoBehaviour
     public GameObject Player;
     public int wait;
     public bool dead;
-    
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Damage")
-        {
-            health--;
-            if (health > 0)
-            {
-                Player.GetComponent<PlayerPoints>().points += 10;
-            }
-        }
-    }
+
     private void Update()
     {
 
@@ -60,7 +49,6 @@ public class EnemyHp : MonoBehaviour
             dead = true;
             Player.GetComponent<PlayerPoints>().points += 50;
             yield return new WaitForSeconds(wait);
-
             Destroy(gameObject);
 
 
