@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 135553686393699058}
   - component: {fileID: 3970072327161211936}
   - component: {fileID: 4523411029797377059}
+  - component: {fileID: 3921422207612103455}
   m_Layer: 10
   m_Name: Bullet_45mm_Bullet
   m_TagString: Damage
@@ -250,3 +251,18 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &3921422207612103455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900734910723676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13b8497947024f4e87c19ade96f6132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer1: 0
+  timer2: 0
+  SELFDESTRUCT: 0
