@@ -22,7 +22,6 @@ public class DoorBuy : MonoBehaviour
         if(ovrgrabbable.isGrabbed && playerpoints >= cost)
         {
             Player.GetComponent<PlayerPoints>().points -= cost;
-            ovrgrabbable.grabbedBy.gameObject.GetComponent<OVRGrabber>().ForceRelease(gameObject.GetComponent<OVRGrabbable>());
             Destroy(gameObject);
         }
         else
