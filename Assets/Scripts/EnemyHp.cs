@@ -17,7 +17,7 @@ public class EnemyHp : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void OnTriggerEnter(Collider collision)
+    /*void OnTriggerEnter(Collider collision)
     {
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Damage")
@@ -28,7 +28,7 @@ public class EnemyHp : MonoBehaviour
                 Player.GetComponent<PlayerPoints>().points += 10;
             }
         }
-    }
+    }*/
 
     private void Update()
     {
