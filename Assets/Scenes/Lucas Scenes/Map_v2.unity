@@ -3775,7 +3775,7 @@ PrefabInstance:
     - target: {fileID: 4191349968972851573, guid: 2637e5c3332e43a40835785787b706d3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4191349968972851572, guid: 2637e5c3332e43a40835785787b706d3,
         type: 3}
@@ -4122,7 +4122,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.4523323e+32, y: 251041340, z: 4.5451286e+30, w: 3.0353437e+32}
+  m_BoundingSphereOverride: {x: 7.9e-43, y: 6, z: 6, w: 6}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 2
@@ -4211,6 +4211,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shoot
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090466262466813555, guid: 0c418f8aeeaa7ed4aa7feaf0f1b0d21b,
+        type: 3}
+      propertyPath: shotPower
+      value: 5000
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5129905333904602557, guid: 0c418f8aeeaa7ed4aa7feaf0f1b0d21b, type: 3}
@@ -4480,6 +4485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: rolloffMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715425296185929118, guid: 1171306d4b19c6d40bef8cf00aa3f2fe,
+        type: 3}
+      propertyPath: shotPower
+      value: 5000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1171306d4b19c6d40bef8cf00aa3f2fe, type: 3}

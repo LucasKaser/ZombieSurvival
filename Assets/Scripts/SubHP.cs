@@ -8,9 +8,7 @@ using UnityEngine.AI;
 public class SubHP : MonoBehaviour
 {
     public int health = 5;
-    public Animator Enenmy;
     public GameObject Player;
-    public int wait;
     public bool dead;
     public GameObject zombie;
     private void Start()
