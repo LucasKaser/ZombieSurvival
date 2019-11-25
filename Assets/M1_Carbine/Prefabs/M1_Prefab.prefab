@@ -341,7 +341,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.132
+  m_Volume: 0.056
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -493,8 +493,7 @@ MonoBehaviour:
   m_allowOffhandGrab: 1
   m_snapPosition: 1
   m_snapOrientation: 1
-  m_snapOffset: {fileID: 605472858867202329, guid: 3646b49861a102b42a566e7e1427c476,
-    type: 3}
+  m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!65 &8866298470175185591
 BoxCollider:
@@ -766,13 +765,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2956201814989854290}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 3.41, y: 7.1, z: -0.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4264696034639524}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &6007308648578760835
 GameObject:
   m_ObjectHideFlags: 0

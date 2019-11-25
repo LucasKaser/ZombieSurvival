@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6832780187283905898}
   - component: {fileID: 6824536802064500202}
   - component: {fileID: 3468742724086551539}
+  - component: {fileID: 197888350}
   m_Layer: 8
   m_Name: PPSh-41
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 1247812945177877934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.3773866, y: -0.09397965, z: -1.8815324}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7772, y: 1.7772, z: 1.7772}
   m_Children:
   - {fileID: 1250541127682636056}
   - {fileID: 1244481237055820688}
@@ -289,6 +290,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &197888350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247812945177877934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 0
+  m_snapPosition: 1
+  m_snapOrientation: 1
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &1248532324834979326
 GameObject:
   m_ObjectHideFlags: 0

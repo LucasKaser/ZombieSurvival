@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1894519002268292737}
   - component: {fileID: 1894519002266965671}
   - component: {fileID: 1894519002265867367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Sopmod_Iron_Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 1894519002268292739}
   - component: {fileID: 1894519002266965665}
   - component: {fileID: 1894519002265867361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Sopmod_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,10 @@ GameObject:
   - component: {fileID: 1026720010517911219}
   - component: {fileID: 3179537898901157713}
   - component: {fileID: 2129000818307568435}
-  m_Layer: 0
+  - component: {fileID: 48696819}
+  - component: {fileID: 48696813}
+  - component: {fileID: 48696814}
+  m_Layer: 8
   m_Name: M4A1 Sopmod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,6 +371,52 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &48696819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894519002268060325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 0
+  m_snapPosition: 1
+  m_snapOrientation: 1
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+--- !u!65 &48696813
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894519002268060325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16700566, y: 0.472937, z: 1.7100539}
+  m_Center: {x: 0.0020049214, y: 0.0048701167, z: 0.12468696}
+--- !u!54 &48696814
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894519002268060325}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &1894519002268060327
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +428,7 @@ GameObject:
   - component: {fileID: 1894519002268292743}
   - component: {fileID: 1894519002266965669}
   - component: {fileID: 1894519002265867365}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Sopmod_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9221249194346438362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Casing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5505725779744118216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +568,7 @@ GameObject:
   - component: {fileID: 3745287290680665338}
   - component: {fileID: 1935933784275696975}
   - component: {fileID: 7790329939400101635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

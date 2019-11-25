@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2466251805442240833}
   - component: {fileID: 2466251805445108071}
   - component: {fileID: 2466251805444141991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Skorpion_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,8 @@ GameObject:
   - component: {fileID: 2078351070395616039}
   - component: {fileID: 277733996208813674}
   - component: {fileID: 1935265707462771735}
-  m_Layer: 0
+  - component: {fileID: 1043096360}
+  m_Layer: 8
   m_Name: Skorpion VZ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 2466251805442141541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3475595, y: 0.092680804, z: -1.5009274}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children:
   - {fileID: 2466251805442240839}
   - {fileID: 2466251805442240833}
@@ -289,6 +290,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1043096360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466251805442141541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 0
+  m_snapPosition: 1
+  m_snapOrientation: 1
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &2466251805442141543
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +318,7 @@ GameObject:
   - component: {fileID: 2466251805442240839}
   - component: {fileID: 2466251805445108069}
   - component: {fileID: 2466251805444141989}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Skorpion_Body_000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +397,7 @@ GameObject:
   - component: {fileID: 1922229249674027737}
   - component: {fileID: 8714838793025246212}
   - component: {fileID: 8522018164508432165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5633633656688409852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Casing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3410082612121719181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
