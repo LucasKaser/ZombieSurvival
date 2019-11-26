@@ -44732,7 +44732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundsLeft: 8
-  slot: {fileID: 0}
+  slot: {fileID: 3725164508332928567}
 --- !u!4 &1894519002499568884
 Transform:
   m_ObjectHideFlags: 0
@@ -44819,6 +44819,16 @@ PrefabInstance:
       propertyPath: MagSlot
       value: 
       objectReference: {fileID: 3725164508332928567}
+    - target: {fileID: 3725164508611584428, guid: 5b31a82ea82c71840a333aa35c0e8888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.41436672
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725164508611584428, guid: 5b31a82ea82c71840a333aa35c0e8888,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.03415525
+      objectReference: {fileID: 0}
     - target: {fileID: 9125510406587164592, guid: 5b31a82ea82c71840a333aa35c0e8888,
         type: 3}
       propertyPath: currentMag
