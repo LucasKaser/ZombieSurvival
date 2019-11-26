@@ -93,6 +93,8 @@ GameObject:
   - component: {fileID: 277733996208813674}
   - component: {fileID: 1935265707462771735}
   - component: {fileID: 1043096360}
+  - component: {fileID: 1043096354}
+  - component: {fileID: 1043096355}
   m_Layer: 8
   m_Name: Skorpion VZ
   m_TagString: Untagged
@@ -109,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 2466251805442141541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3475595, y: 0.092680804, z: -1.5009274}
-  m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
+  m_LocalScale: {x: 0.5675592, y: 0.5675592, z: 0.5675592}
   m_Children:
   - {fileID: 2466251805442240839}
   - {fileID: 2466251805442240833}
@@ -159,7 +161,7 @@ MonoBehaviour:
   barrelLocation: {fileID: 3410082612121719181}
   casingExitLocation: {fileID: 5633633656688409852}
   bang: {fileID: 1935265707462771735}
-  bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
+  bang2: {fileID: 8300000, guid: d610731df8e6d624abf35cc6946b7703, type: 3}
   shotPower: 2000
   shoot: 0
 --- !u!114 &2078351070395616039
@@ -206,7 +208,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d610731df8e6d624abf35cc6946b7703, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.583
+  m_Volume: 0.133
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -307,6 +309,35 @@ MonoBehaviour:
   m_snapOrientation: 1
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!54 &1043096354
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466251805442141541}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1043096355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466251805442141541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10581696, y: 0.39604953, z: 1.2386658}
+  m_Center: {x: 0.01586782, y: 0.014713356, z: 0.0006047009}
 --- !u!1 &2466251805442141543
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,13 +531,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5943046847584270608}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.1748, z: -0.246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2466251805442240837}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &8001263845162326747
 GameObject:
   m_ObjectHideFlags: 0

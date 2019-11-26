@@ -179,13 +179,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950053330047964425}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.000068992376, y: 0.0499, z: 0.058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7811818012279746589}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2077939109638084536
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,13 +443,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5617381966090264018}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.000068992376, y: 0.0577, z: -0.1325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7811818012279746589}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &6052742278818487405
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,9 +636,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9053537744334831486}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.14906771, y: 0.06384377, z: -0.15812506}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3206, y: 1.3206, z: 1.3206}
   m_Children:
   - {fileID: 6500682805719438438}
   - {fileID: 8201871403250792906}
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
+  bulletPrefab: {fileID: 1900734910723676, guid: 5420d11c3fe4c5247a0563dab1b33d1a,
     type: 3}
   casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
     type: 3}
@@ -723,7 +723,7 @@ MonoBehaviour:
   casingExitLocation: {fileID: 1591824153989117403}
   bang: {fileID: 1201840835485578751}
   bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  shotPower: 100
+  shotPower: 5000
   shoot: 0
 --- !u!82 &1201840835485578751
 AudioSource:
@@ -737,7 +737,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.181
   m_Pitch: 1
   Loop: 0
   Mute: 0

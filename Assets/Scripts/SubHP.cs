@@ -25,6 +25,54 @@ public class SubHP : MonoBehaviour
                 Player.GetComponent<PlayerPoints>().points += 10;
             }
         }
+        if (collision.gameObject.tag == "1911")
+        {
+            health--;
+            if (health > 0)
+            {
+                Player.GetComponent<PlayerPoints>().points += 10;
+            }
+            if (collision.gameObject.tag == "carbine")
+            {
+                health -= 3;
+                if (health > 0)
+                {
+                    Player.GetComponent<PlayerPoints>().points += 10;
+                }
+            }
+            if (collision.gameObject.tag == "ak47")
+            {
+                health -= 2;
+                if (health > 0)
+                {
+                    Player.GetComponent<PlayerPoints>().points += 10;
+                }
+            }
+            if (collision.gameObject.tag == "ak74")
+            {
+                health -= 1;
+                if (health > 0)
+                {
+                    Player.GetComponent<PlayerPoints>().points += 10;
+                }
+            }
+            if (collision.gameObject.tag == "m4")
+            {
+                health -= 1;
+                if (health > 0)
+                {
+                    Player.GetComponent<PlayerPoints>().points += 10;
+                }
+            }
+            if (collision.gameObject.tag == "deagle")
+            {
+                health -= 3;
+                if (health > 0)
+                {
+                    Player.GetComponent<PlayerPoints>().points += 10;
+                }
+            }
+        }
     }
     private void Update()
     {

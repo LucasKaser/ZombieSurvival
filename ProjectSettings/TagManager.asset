@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Zombie
   - Damage
+  - 1911
+  - carbine
+  - ak47
+  - ak74
+  - m4
+  - deagle
   layers:
   - Default
   - TransparentFX

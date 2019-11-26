@@ -93,8 +93,8 @@ GameObject:
   - component: {fileID: 4523411029797377059}
   - component: {fileID: 3921422207612103455}
   m_Layer: 10
-  m_Name: Bullet_45mm_Bullet
-  m_TagString: Damage
+  m_Name: Ak47
+  m_TagString: ak47
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
