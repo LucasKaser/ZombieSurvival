@@ -16,9 +16,11 @@ public class Mag : MonoBehaviour
             GetComponent<BoxCollider>().enabled = false;
 
             GetComponent<OVRGrabbable>().grabbedBy.gameObject.GetComponent<OVRGrabber>().ForceRelease(gameObject.GetComponent<OVRGrabbable>());
-            transform.parent = slot.transform.Find("AttachPoint");
-            transform.localPosition = Vector3.zero;
-            transform.localEulerAngles = Vector3.zero;
+
+            Transform attachPoint = slot.transform.Find("AttachPoint");
+            transform.position = attachPoint.position;
+            transform.rotation = attachPoint.rotation;
+            transform.parent = attachPoint;
 
         }
     }

@@ -14,6 +14,7 @@ public class FullAuto : MonoBehaviour
     public AudioClip bang2;
     public float shotPower = 100f;
     public bool shoot;
+
     void Start()
     {
         if (barrelLocation == null)
@@ -44,6 +45,9 @@ public class FullAuto : MonoBehaviour
 
     void Shoot()
     {
+
+        
+
         //  GameObject bullet;
         //  bullet = Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation);
         // bullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
@@ -52,9 +56,9 @@ public class FullAuto : MonoBehaviour
        Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
        tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
         bang.PlayOneShot(bang2);
-       // Destroy(tempFlash, 0.5f);
+        // Destroy(tempFlash, 0.5f);
         //  Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation).GetComponent<Rigidbody>().AddForce(casingExitLocation.right * 100f);
-       
+      
     }
 
     void CasingRelease()
