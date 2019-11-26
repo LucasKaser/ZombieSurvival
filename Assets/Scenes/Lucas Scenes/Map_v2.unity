@@ -1944,6 +1944,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2174022
       objectReference: {fileID: 0}
+    - target: {fileID: 770419863126047947, guid: d69c81a8b06e1cf4f8786b440c2d8048,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 770419863126047947, guid: d69c81a8b06e1cf4f8786b440c2d8048,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.133
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d69c81a8b06e1cf4f8786b440c2d8048, type: 3}
 --- !u!224 &705997927 stripped
@@ -2133,6 +2143,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5675592
       objectReference: {fileID: 0}
+    - target: {fileID: 1935265707462771735, guid: 4900b1eae9703164d94cf264c272d217,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935265707462771735, guid: 4900b1eae9703164d94cf264c272d217,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.133
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4900b1eae9703164d94cf264c272d217, type: 3}
 --- !u!1 &917276936
@@ -2313,6 +2333,16 @@ PrefabInstance:
         type: 3}
       propertyPath: shotPower
       value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 108902872137230042, guid: d041c3013c92254498231ca059ab43cf,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108902872137230042, guid: d041c3013c92254498231ca059ab43cf,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.133
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d041c3013c92254498231ca059ab43cf, type: 3}
@@ -2601,6 +2631,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976633983387386940, guid: ed12d1646e7a77547a43b6616061d7fd,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976633983387386940, guid: ed12d1646e7a77547a43b6616061d7fd,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.133
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed12d1646e7a77547a43b6616061d7fd, type: 3}
@@ -2969,6 +3009,16 @@ PrefabInstance:
       propertyPath: shotPower
       value: 5000
       objectReference: {fileID: 0}
+    - target: {fileID: 7432646401097518965, guid: 3c39c8bc7c658b64aab6527a5fcef918,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432646401097518965, guid: 3c39c8bc7c658b64aab6527a5fcef918,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.133
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c39c8bc7c658b64aab6527a5fcef918, type: 3}
 --- !u!4 &1142178899 stripped
@@ -3240,6 +3290,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 605472858867202329, guid: d3aed9973ee04e74aa7c7c0d61d0d38f,
         type: 3}
+    - target: {fileID: 870463111649071232, guid: a2a1e0cb3c7a1954a8c8db5b1d3e8759,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 870463111649071232, guid: a2a1e0cb3c7a1954a8c8db5b1d3e8759,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.133
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a1e0cb3c7a1954a8c8db5b1d3e8759, type: 3}
 --- !u!1 &1406758681
@@ -4854,7 +4914,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1278659753, guid: b592d56d4a6cf484cb02c04c944c5e3b, type: 3}
       propertyPath: m_Volume
-      value: 0.072
+      value: 0.133
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278659753, guid: b592d56d4a6cf484cb02c04c944c5e3b, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b592d56d4a6cf484cb02c04c944c5e3b, type: 3}
@@ -5123,6 +5187,16 @@ PrefabInstance:
         type: 3}
       propertyPath: rolloffMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463273053403296526, guid: 1171306d4b19c6d40bef8cf00aa3f2fe,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463273053403296526, guid: 1171306d4b19c6d40bef8cf00aa3f2fe,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.133
       objectReference: {fileID: 0}
     - target: {fileID: 2715425296185929118, guid: 1171306d4b19c6d40bef8cf00aa3f2fe,
         type: 3}
