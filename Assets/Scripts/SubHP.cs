@@ -32,45 +32,46 @@ public class SubHP : MonoBehaviour
             {
                 Player.GetComponent<PlayerPoints>().points += 10;
             }
-            if (collision.gameObject.tag == "carbine")
+            
+        }
+        if (collision.gameObject.tag == "carbine")
+        {
+            health -= 3;
+            if (health > 0)
             {
-                health -= 3;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10;
-                }
+                Player.GetComponent<PlayerPoints>().points += 10;
             }
-            if (collision.gameObject.tag == "ak47")
+        }
+        if (collision.gameObject.tag == "ak47")
+        {
+            health -= 2;
+            if (health > 0)
             {
-                health -= 2;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10;
-                }
+                Player.GetComponent<PlayerPoints>().points += 10;
             }
-            if (collision.gameObject.tag == "ak74")
+        }
+        if (collision.gameObject.tag == "ak74")
+        {
+            health -= 1;
+            if (health > 0)
             {
-                health -= 1;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10;
-                }
+                Player.GetComponent<PlayerPoints>().points += 10;
             }
-            if (collision.gameObject.tag == "m4")
+        }
+        if (collision.gameObject.tag == "m4")
+        {
+            health -= 1;
+            if (health > 0)
             {
-                health -= 1;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10;
-                }
+                Player.GetComponent<PlayerPoints>().points += 10;
             }
-            if (collision.gameObject.tag == "deagle")
+        }
+        if (collision.gameObject.tag == "deagle")
+        {
+            health -= 3;
+            if (health > 0)
             {
-                health -= 3;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10;
-                }
+                Player.GetComponent<PlayerPoints>().points += 10;
             }
         }
     }
