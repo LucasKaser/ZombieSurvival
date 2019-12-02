@@ -44986,12 +44986,17 @@ PrefabInstance:
         type: 3}
       propertyPath: currentMag
       value: 
+<<<<<<< HEAD
       objectReference: {fileID: 0}
+=======
+      objectReference: {fileID: 1894519002499205337}
+>>>>>>> 9cbe56569c88015d5f94319f894b87bb8363af47
     - target: {fileID: 3725164508611584431, guid: 5b31a82ea82c71840a333aa35c0e8888,
         type: 3}
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3725164507739486679, guid: 5b31a82ea82c71840a333aa35c0e8888,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -45012,6 +45017,8 @@ PrefabInstance:
       propertyPath: roundsLeft
       value: 5
       objectReference: {fileID: 0}
+=======
+>>>>>>> 9cbe56569c88015d5f94319f894b87bb8363af47
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b31a82ea82c71840a333aa35c0e8888, type: 3}
 --- !u!1001 &4203010298043580359
