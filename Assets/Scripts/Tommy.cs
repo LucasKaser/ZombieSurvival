@@ -27,13 +27,13 @@ public class Tommy : MonoBehaviour
         {
             simpleShoot.shoot = true;
 
-            if (ovrgrabbable.isGrabbed && OVRInput.GetUp(shootingbutton, ovrgrabbable.grabbedBy.GetController()))
-            {
-                simpleShoot.shoot = false;
-            }
+            
 
         }
-
+        if (ovrgrabbable.isGrabbed && OVRInput.GetUp(shootingbutton, ovrgrabbable.grabbedBy.GetController()))
+        {
+                simpleShoot.shoot = false;
+        }
     }
 }
 
