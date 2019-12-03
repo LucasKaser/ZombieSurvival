@@ -25,12 +25,14 @@ public class MagAttach : MonoBehaviour
         {
             if(other.gameObject.GetComponent<OVRGrabbable>().grabbedBy == null)
             {
+                
                 Debug.Log("WE COLLIDED");
                 mag = other.gameObject;
                 //mag.transform.position = M4.transform.position + new Vector3(0, -0.03f, 0.14f);
                 other.transform.parent = transform;
                 //mag.transform.position = Attach.transform.position;
                 Debug.Log(mag.transform.position);
+                
             }
 
         }
