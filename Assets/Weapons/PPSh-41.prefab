@@ -35,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 1247812945177877934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.3773866, y: -0.09397965, z: -1.8815324}
-  m_LocalScale: {x: 1.7772, y: 1.7772, z: 1.7772}
+  m_LocalScale: {x: 1.3999537, y: 1.3999537, z: 1.3999537}
   m_Children:
   - {fileID: 1250541127682636056}
   - {fileID: 1244481237055820688}
@@ -144,7 +144,7 @@ MonoBehaviour:
   casingExitLocation: {fileID: 8003721468298771298}
   bang: {fileID: 108902872137230042}
   bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  shotPower: 100
+  shotPower: 10000
   shoot: 0
 --- !u!82 &108902872137230042
 AudioSource:
@@ -157,8 +157,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.169
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -302,9 +302,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 0
-  m_snapPosition: 1
-  m_snapOrientation: 1
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!1 &1248532324834979326

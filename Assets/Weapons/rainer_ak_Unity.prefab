@@ -780,7 +780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingbutton: 8192
-  MagSlot: {fileID: 0}
 --- !u!114 &1278659755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,10 +792,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 0
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 605472858867202329, guid: aa230859acefce745979445655e92725,
+    type: 3}
   m_grabPoints: []
   m_materialColorField: 
 --- !u!114 &1278659754
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664c05e23b1241043b32c09370d615c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
+  bulletPrefab: {fileID: 1900734910723676, guid: f814edaa63e4fba4db5fcd0da38f3cee,
     type: 3}
   casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
     type: 3}
@@ -821,7 +821,7 @@ MonoBehaviour:
   casingExitLocation: {fileID: 8233368568145265262}
   bang: {fileID: 1278659753}
   bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  shotPower: 5000
+  shotPower: 10000
   shoot: 0
 --- !u!82 &1278659753
 AudioSource:
@@ -835,7 +835,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.133
   m_Pitch: 1
   Loop: 0
   Mute: 0

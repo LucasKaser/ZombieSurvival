@@ -162,7 +162,7 @@ MonoBehaviour:
   casingExitLocation: {fileID: 5633633656688409852}
   bang: {fileID: 1935265707462771735}
   bang2: {fileID: 8300000, guid: d610731df8e6d624abf35cc6946b7703, type: 3}
-  shotPower: 2000
+  shotPower: 10000
   shoot: 0
 --- !u!114 &2078351070395616039
 MonoBehaviour:

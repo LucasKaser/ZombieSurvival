@@ -340,9 +340,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.056
-  m_Pitch: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.6
+  m_Pitch: 0.9
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -453,17 +453,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
+  bulletPrefab: {fileID: 1900734910723676, guid: a8f6cf144a7d6a943a9086e839047f26,
     type: 3}
-  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
+  casingPrefab: {fileID: 1482960508195586, guid: 01add72d62f91ab4e8301ef9b225614d,
     type: 3}
   muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
     type: 3}
   barrelLocation: {fileID: 316556229958304354}
   casingExitLocation: {fileID: 836248618140461145}
   bang: {fileID: 870463111649071232}
-  bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  shotPower: 5000
+  bang2: {fileID: 8300000, guid: b0a420a9258e345489eaef81088d92b5, type: 3}
+  shotPower: 10000
   shoot: 0
 --- !u!114 &1696299480610739673
 MonoBehaviour:
@@ -493,7 +493,8 @@ MonoBehaviour:
   m_allowOffhandGrab: 1
   m_snapPosition: 1
   m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
+  m_snapOffset: {fileID: 605472858867202329, guid: d3aed9973ee04e74aa7c7c0d61d0d38f,
+    type: 3}
   m_grabPoints: []
 --- !u!65 &8866298470175185591
 BoxCollider:

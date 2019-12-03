@@ -683,9 +683,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 0
-  m_snapPosition: 1
-  m_snapOrientation: 1
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!114 &3545086595650243127
@@ -722,8 +722,8 @@ MonoBehaviour:
   barrelLocation: {fileID: 362426286424964988}
   casingExitLocation: {fileID: 1591824153989117403}
   bang: {fileID: 1201840835485578751}
-  bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  shotPower: 5000
+  bang2: {fileID: 8300000, guid: 5632a5b11c5f865499f90b462805bb66, type: 3}
+  shotPower: 10000
   shoot: 0
 --- !u!82 &1201840835485578751
 AudioSource:
@@ -737,7 +737,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.181
+  m_Volume: 0.169
   m_Pitch: 1
   Loop: 0
   Mute: 0

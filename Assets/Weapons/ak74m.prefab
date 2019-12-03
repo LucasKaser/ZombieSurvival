@@ -381,8 +381,8 @@ MonoBehaviour:
   barrelLocation: {fileID: 2128616494330147450}
   casingExitLocation: {fileID: 4026205037966024723}
   bang: {fileID: 770419863126047947}
-  bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  shotPower: 5000
+  bang2: {fileID: 8300000, guid: fc0504682fd453d4aa5543db55c08bbf, type: 3}
+  shotPower: 10000
   shoot: 0
 --- !u!82 &770419863126047947
 AudioSource:
@@ -396,8 +396,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
-  m_Pitch: 1
+  m_Volume: 0.481
+  m_Pitch: 0.9
   Loop: 0
   Mute: 0
   Spatialize: 0

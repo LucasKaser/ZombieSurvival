@@ -41,7 +41,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.055
+  m_Volume: 0.133
   m_Pitch: 0.85
   Loop: 0
   Mute: 0
@@ -52,7 +52,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0.01
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664c05e23b1241043b32c09370d615c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
+  bulletPrefab: {fileID: 1900734910723676, guid: f814edaa63e4fba4db5fcd0da38f3cee,
     type: 3}
   casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
     type: 3}
@@ -147,7 +147,7 @@ MonoBehaviour:
   casingExitLocation: {fileID: 717846118382293802}
   bang: {fileID: 3463273053403296526}
   bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  shotPower: 10000
+  shotPower: 5000
   shoot: 0
 --- !u!1 &9072886226394545379
 GameObject:
@@ -205,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.287
+      value: 0.239
       objectReference: {fileID: 0}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -331,8 +331,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1173774559488108273, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
 --- !u!1 &4598748979486434742 stripped
 GameObject:
