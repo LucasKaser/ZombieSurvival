@@ -5,27 +5,34 @@ using UnityEngine;
 public class MagAttach : MonoBehaviour
 {
     public GameObject mag;
-    public GameObject M4;
+    public GameObject Gun;
+    public GameObject Attach;
 
-    private void Start()
+
+    private void Update()
     {
-        //mag.transform.parent = M4.transform;
-    }
+        if (mag.transform.parent != null)
+        {
+            //mag.transform.position = M4.transform.position + new Vector3(0, -0.03f, 0.14f);
+            mag.transform.position = Attach.transform.position;
+        }
 
-    private void OnTriggerEnter(Collider other)
+    }
+    
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Mag")
         {
-            Debug.Log("WE COLLIDED");
-            other.transform.parent = transform;
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Mag")
-        {
-            Debug.Log("WE COLLIDED");
-            collision.transform.parent = transform;
+            if(other.gameObject.GetComponent<OVRGrabbable>().grabbedBy == null)
+            {
+                Debug.Log("WE COLLIDED");
+                mag = other.gameObject;
+                //mag.transform.position = M4.transform.position + new Vector3(0, -0.03f, 0.14f);
+                other.transform.parent = transform;
+                //mag.transform.position = Attach.transform.position;
+                Debug.Log(mag.transform.position);
+            }
+
         }
     }
 
