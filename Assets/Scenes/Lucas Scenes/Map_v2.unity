@@ -2973,6 +2973,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 770419863126047947, guid: d69c81a8b06e1cf4f8786b440c2d8048,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.153
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d69c81a8b06e1cf4f8786b440c2d8048, type: 3}
 --- !u!1 &607295047
@@ -4714,6 +4719,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1031314130, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
+      propertyPath: points
+      value: 163
+      objectReference: {fileID: 0}
     - target: {fileID: 825633769, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
       propertyPath: Health
       value: 
@@ -4721,10 +4730,6 @@ PrefabInstance:
     - target: {fileID: 825633769, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
       propertyPath: health
       value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 1031314130, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
-      propertyPath: points
-      value: 163
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
@@ -4746,7 +4751,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cf6795cfad3dd8b4c8588fc77bc5ad67, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.23
+  m_Volume: 0.074
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4988,6 +4993,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976633983387386940, guid: ed12d1646e7a77547a43b6616061d7fd,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed12d1646e7a77547a43b6616061d7fd, type: 3}
@@ -7126,6 +7136,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shootingbutton
       value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599375000175341422, guid: 930c2cf00d792e54fb886c57ff9b9dd2,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.129
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930c2cf00d792e54fb886c57ff9b9dd2, type: 3}
@@ -9406,6 +9421,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260419190271154058, guid: d2c731a0aaeee8e4d8db2e7d98b77155,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.123
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2c731a0aaeee8e4d8db2e7d98b77155, type: 3}
