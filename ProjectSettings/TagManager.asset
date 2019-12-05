@@ -13,6 +13,7 @@ TagManager:
   - m4
   - deagle
   - Mag
+  - enfield
   layers:
   - Default
   - TransparentFX
