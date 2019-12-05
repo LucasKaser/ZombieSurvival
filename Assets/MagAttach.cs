@@ -11,9 +11,9 @@ public class MagAttach : MonoBehaviour
 
     private void Update()
     {
-        if (mag.transform.parent != null)
+        if (mag.transform.parent == Gun)
         {
-            //mag.transform.position = M4.transform.position + new Vector3(0, -0.03f, 0.14f);
+            //mag.transform.position = Gun.transform.position + new Vector3(0, -0.03f, 0.14f);
             mag.transform.position = Attach.transform.position;
         }
 
@@ -25,14 +25,18 @@ public class MagAttach : MonoBehaviour
         {
             if(other.gameObject.GetComponent<OVRGrabbable>().grabbedBy == null)
             {
-                
                 Debug.Log("WE COLLIDED");
                 mag = other.gameObject;
                 //mag.transform.position = M4.transform.position + new Vector3(0, -0.03f, 0.14f);
                 other.transform.parent = transform;
-                //mag.transform.position = Attach.transform.position;
-                Debug.Log(mag.transform.position);
-                
+                mag.transform.position = Attach.transform.position;
+                mag.transform.rotation = Attach.transform.rotation;
+                if (mag.transform.rotation != Gun.transform.rotation)
+                {
+                    //mag.transform.eulerAngles.x = Gun.transform.eulerAngles.x;
+
+                }
+                //that plus 270 on the x
             }
 
         }
