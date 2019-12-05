@@ -1087,7 +1087,7 @@ GameObject:
   - component: {fileID: 6490079915705920053}
   m_Layer: 0
   m_Name: M4A1_Magazine
-  m_TagString: Untagged
+  m_TagString: Mag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1587,7 +1587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1900734910723676, guid: d33cdf8f580b840468088f100c7ccff1,
     type: 3}
-  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
+  casingPrefab: {fileID: 1482960508195586, guid: 01add72d62f91ab4e8301ef9b225614d,
     type: 3}
   muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
     type: 3}
@@ -1612,7 +1612,8 @@ MonoBehaviour:
   m_allowOffhandGrab: 1
   m_snapPosition: 0
   m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
+  m_snapOffset: {fileID: 605472858867202329, guid: 35b779705e294a54fa59e7a12b8a30a4,
+    type: 3}
   m_grabPoints: []
 --- !u!114 &3022345851474841326
 MonoBehaviour:
@@ -1629,7 +1630,8 @@ MonoBehaviour:
   m_allowOffhandGrab: 1
   m_snapPosition: 0
   m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
+  m_snapOffset: {fileID: 605472858867202329, guid: 35b779705e294a54fa59e7a12b8a30a4,
+    type: 3}
   m_grabPoints: []
   m_materialColorField: 
 --- !u!114 &1383892142328996983

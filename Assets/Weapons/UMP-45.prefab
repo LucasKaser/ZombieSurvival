@@ -157,7 +157,7 @@ MonoBehaviour:
   casingExitLocation: {fileID: 8699884327482076979}
   bang: {fileID: 7432646401097518965}
   bang2: {fileID: 8300000, guid: 874068c9b6f59ed4fb6ecc51a9954c37, type: 3}
-  shotPower: 10000
+  shotPower: 5000
   shoot: 0
 --- !u!82 &7432646401097518965
 AudioSource:
@@ -171,7 +171,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.416
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -442,9 +442,13 @@ GameObject:
   - component: {fileID: 2729105649520294965}
   - component: {fileID: 2729105649519524883}
   - component: {fileID: 2729105649518395091}
+  - component: {fileID: 1889625680}
+  - component: {fileID: 1889625681}
+  - component: {fileID: 1889625678}
+  - component: {fileID: 1889625679}
   m_Layer: 8
   m_Name: UMP-45_Mag
-  m_TagString: Untagged
+  m_TagString: Mag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -509,6 +513,70 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!54 &1889625680
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729105649520386069}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1889625681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729105649520386069}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.031329278, y: 0.22619784, z: 0.08503418}
+  m_Center: {x: -8.042451e-15, y: -0.04554235, z: -0.14148429}
+--- !u!114 &1889625678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729105649520386069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
+--- !u!114 &1889625679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729105649520386069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &4791217692892349648
 GameObject:
   m_ObjectHideFlags: 0
