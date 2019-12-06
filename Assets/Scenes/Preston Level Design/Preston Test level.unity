@@ -1817,11 +1817,6 @@ PrefabInstance:
       propertyPath: mag
       value: 
       objectReference: {fileID: 1894519002499205332}
-    - target: {fileID: 3725164508611584431, guid: 5b31a82ea82c71840a333aa35c0e8888,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b31a82ea82c71840a333aa35c0e8888, type: 3}
 --- !u!1 &827693796
