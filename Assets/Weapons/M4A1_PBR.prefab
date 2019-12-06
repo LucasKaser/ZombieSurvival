@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5041531793515239692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Casin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bolt_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Button_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458182}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458184}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DustCover_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DustCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Handle_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458196}
   - component: {fileID: 3879260353643993248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458198}
   - component: {fileID: 3879260353643993250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458200}
   - component: {fileID: 3879260353643993252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_DustCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458202}
   - component: {fileID: 3879260353643993254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_BoltFwdAsst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458204}
   - component: {fileID: 3879260353643993256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,7 +809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458206}
   - component: {fileID: 3879260353643993258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_FrontSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458208}
   - component: {fileID: 3879260353643993260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Handguard_m
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -991,7 +991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458210}
   - component: {fileID: 3879260353643993262}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Handguard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1082,7 +1082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458212}
   - component: {fileID: 3879260353643993264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Magazine
   m_TagString: Mag
   m_Icon: {fileID: 0}
@@ -1173,7 +1173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458214}
   - component: {fileID: 3879260353643993266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1264,7 +1264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458216}
   - component: {fileID: 3879260353643993268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_RearSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1355,7 +1355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458218}
   - component: {fileID: 3879260353643993270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_MagCatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,7 +1452,8 @@ GameObject:
   - component: {fileID: 3022345851474841326}
   - component: {fileID: 1383892142328996983}
   - component: {fileID: 1937043423013542800}
-  m_Layer: 0
+  - component: {fileID: 1699821287}
+  m_Layer: 8
   m_Name: M4A1_PBR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1695,6 +1696,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1699821287
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879260353655494092}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3879260353655494094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,7 +1722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458222}
   - component: {fileID: 3879260353643993274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Receiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1799,7 +1816,7 @@ GameObject:
   - component: {fileID: 3486524469709081358}
   - component: {fileID: 1188352438944796480}
   - component: {fileID: 2616163095120404568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1875,11 +1892,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3879260353655494096}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15349603, y: 0, z: 0.030000001}
-  m_Center: {x: 0.03325215, y: 1.6989513e-23, z: -1.5102187e-31}
+  m_Size: {x: 0.00023577696, y: 0.0014549601, z: 0.0007762607}
+  m_Center: {x: -0.0000021378448, y: -0.00028204182, z: 0.00002912154}
 --- !u!1 &3879260353655494098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,7 +1907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3879260353655458226}
   - component: {fileID: 3879260353643993272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: M4A1_Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1980,7 +1997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458228}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MagCatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2011,7 +2028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Magazine_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2041,7 +2058,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Selector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2072,7 +2089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MagCatch_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2102,7 +2119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2133,7 +2150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Selector_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2163,7 +2180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2194,7 +2211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stock_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2224,7 +2241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879260353655458246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trigger_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2254,7 +2271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6235900572345732128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2284,7 +2301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6690965022264049328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
