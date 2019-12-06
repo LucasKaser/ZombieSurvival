@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 3425941968436608008}
   - component: {fileID: 727334173}
   - component: {fileID: 727334174}
-  - component: {fileID: 727334175}
   - component: {fileID: 727334176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BoxMag
   m_TagString: Mag
   m_Icon: {fileID: 0}
@@ -64,24 +63,6 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
---- !u!114 &727334175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3425941968436568104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_materialColorField: 
 --- !u!54 &727334176
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -107,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3425941968436608010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dummy002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +127,8 @@ GameObject:
   - component: {fileID: 5991700629601461374}
   - component: {fileID: 891768789}
   - component: {fileID: 891768788}
-  m_Layer: 0
+  - component: {fileID: 3391461766618898326}
+  m_Layer: 8
   m_Name: MachineGun_00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,6 +355,22 @@ MonoBehaviour:
     type: 3}
   m_grabPoints: []
   m_materialColorField: 
+--- !u!54 &3391461766618898326
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3425941968436568108}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3425941968436568110
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3425941968436608014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3425941968436608016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponBone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3425941968436608020}
   - component: {fileID: 3425941968425004324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MachineGun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,7 +529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3425941968436608022}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponBone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,7 +559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1634996614134018839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3425475466618833395}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Casing
   m_TagString: Untagged
   m_Icon: {fileID: 0}

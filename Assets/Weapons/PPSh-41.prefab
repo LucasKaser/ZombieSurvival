@@ -305,7 +305,8 @@ MonoBehaviour:
   m_allowOffhandGrab: 1
   m_snapPosition: 0
   m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
+  m_snapOffset: {fileID: 605472858867202329, guid: 1dc72e300eb79b142a6191747f5216c7,
+    type: 3}
   m_grabPoints: []
 --- !u!1 &1248532324834979326
 GameObject:

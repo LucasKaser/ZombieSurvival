@@ -29,24 +29,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.026326407, y: 0.20466979, z: 0.036049455}
   m_Center: {x: 0.00000047680712, y: -0.054386526, z: -0.0028728552}
---- !u!114 &2044677462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4598621622383509446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_materialColorField: 
 --- !u!114 &2044677463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,14 +232,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
-      propertyPath: m_TagString
-      value: Mag
-      objectReference: {fileID: 0}
     - target: {fileID: 1763249959818538, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_Name
       value: thompson Variant
@@ -273,15 +247,15 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 0d043614ce1f42245b306496f15df66c, type: 2}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.285
+      value: -11.417387
       objectReference: {fileID: 0}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.239
+      value: 0.12581667
       objectReference: {fileID: 0}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.173
+      value: -1.8034643
       objectReference: {fileID: 0}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -373,6 +347,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
+      propertyPath: m_TagString
+      value: Mag
+      objectReference: {fileID: 0}
     - target: {fileID: 1572509251195436, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -399,8 +381,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel location
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1173774559488108273, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
 --- !u!1 &4598748979486434742 stripped
 GameObject:
