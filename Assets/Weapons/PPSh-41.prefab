@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1846262404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846262405}
+  m_Layer: 0
+  m_Name: AttachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1846262405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846262404}
+  m_LocalRotation: {x: -0.0000018099951, y: 0.00000004371139, z: -7.9178634e-14, w: 1}
+  m_LocalPosition: {x: 0.0019, y: 0.1006, z: 0.2}
+  m_LocalScale: {x: 0.71430933, y: 0.71430933, z: 0.71430933}
+  m_Children: []
+  m_Father: {fileID: 1250370243377946580}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247812945177877934
 GameObject:
   m_ObjectHideFlags: 0
@@ -19,6 +49,7 @@ GameObject:
   - component: {fileID: 6824536802064500202}
   - component: {fileID: 3468742724086551539}
   - component: {fileID: 197888350}
+  - component: {fileID: 86975154}
   m_Layer: 8
   m_Name: PPSh-41
   m_TagString: Untagged
@@ -41,6 +72,7 @@ Transform:
   - {fileID: 1244481237055820688}
   - {fileID: 8003721468298771298}
   - {fileID: 6613587069418487595}
+  - {fileID: 1846262405}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -308,6 +340,21 @@ MonoBehaviour:
   m_snapOffset: {fileID: 605472858867202329, guid: 1dc72e300eb79b142a6191747f5216c7,
     type: 3}
   m_grabPoints: []
+--- !u!114 &86975154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247812945177877934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f92878cfc45f6740b6332d1789394b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mag: {fileID: 1248532324834979326}
+  Gun: {fileID: 1247812945177877934}
+  Attach: {fileID: 1846262404}
 --- !u!1 &1248532324834979326
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +369,6 @@ GameObject:
   - component: {fileID: 1069614433}
   - component: {fileID: 1069614432}
   - component: {fileID: 1069614434}
-  - component: {fileID: 1069614435}
   m_Layer: 8
   m_Name: PPSh_Mag
   m_TagString: Mag
@@ -436,24 +482,6 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
---- !u!114 &1069614435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248532324834979326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_materialColorField: 
 --- !u!1 &1249413249310343704
 GameObject:
   m_ObjectHideFlags: 0
