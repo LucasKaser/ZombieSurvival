@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4817531661429008}
   - component: {fileID: 33262627679157874}
   - component: {fileID: 23654501535622472}
-  - component: {fileID: 6349775985580197822}
-  - component: {fileID: 3768543966137938644}
-  - component: {fileID: 3227735160833089879}
+  - component: {fileID: 8624067625117014032}
+  - component: {fileID: 1918517248090224898}
+  - component: {fileID: 7436523957323071659}
   m_Layer: 8
   m_Name: Collar
   m_TagString: Untagged
@@ -81,7 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6349775985580197822
+--- !u!65 &8624067625117014032
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,12 +89,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324886968729910}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.071421064, y: 0.3244051, z: 0.3182662}
   m_Center: {x: 0, y: 0, z: 0.000000007450581}
---- !u!54 &3768543966137938644
+--- !u!54 &1918517248090224898
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,7 +110,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
---- !u!114 &3227735160833089879
+--- !u!114 &7436523957323071659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,9 +393,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866922139816864}
-  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.38026154, y: 0.38026154, z: 0.38026154}
   m_Children:
   - {fileID: 4817531661429008}
   - {fileID: 4622137315459448}
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3192ebe740b25b47bcfdacdbd11f738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingbutton: 0
+  shootingbutton: 8192
 --- !u!114 &4976849609557298928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,7 +566,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.187
+  m_Volume: 0.129
   m_Pitch: 1
   Loop: 0
   Mute: 0
