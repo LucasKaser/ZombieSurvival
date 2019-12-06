@@ -250,6 +250,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
+      propertyPath: m_TagString
+      value: Mag
+      objectReference: {fileID: 0}
     - target: {fileID: 1763249959818538, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_Name
       value: thompson Variant
@@ -265,15 +273,15 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 0d043614ce1f42245b306496f15df66c, type: 2}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.417387
+      value: -2.285
       objectReference: {fileID: 0}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.12581667
+      value: 0.239
       objectReference: {fileID: 0}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8034643
+      value: -0.173
       objectReference: {fileID: 0}
     - target: {fileID: 4341834099025200, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -365,14 +373,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
-      propertyPath: m_TagString
-      value: Mag
-      objectReference: {fileID: 0}
     - target: {fileID: 1572509251195436, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -399,7 +399,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel location
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1173774559488108273, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
 --- !u!1 &4598748979486434742 stripped
 GameObject:
