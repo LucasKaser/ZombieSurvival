@@ -1563,9 +1563,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mag: {fileID: 6088112112034644072}
+  reloader: {fileID: 0}
   Gun: {fileID: 698852266}
   Attach: {fileID: 698852267}
   magIn: 1
+  ammoCount: 0
+  ammoMax: 0
+  ammoPool: 0
+  poolCap: 0
+  gunName: 
 --- !u!1 &766237053
 GameObject:
   m_ObjectHideFlags: 0
@@ -6846,6 +6852,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011940550886, guid: 31fee1c2b8079524babddad687e95210,
     type: 3}
   m_PrefabInstance: {fileID: 1891797248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2086632976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1406715551868962904, guid: 4c4b658d14c14f84dac3b0c9a1fe2dea,
+    type: 3}
+  m_PrefabInstance: {fileID: 2398308132010132766}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1000008011791499
 GameObject:
@@ -45054,7 +45066,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
 --- !u!1 &4140959486315965835
 GameObject:
@@ -45135,7 +45147,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6088112112034644072
 GameObject:
@@ -45303,12 +45315,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7731440980123859026}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.323, y: 0.477, z: -0.147}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.03, z: 0.006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 2086632976}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7731440980123859026
 GameObject:
@@ -45323,6 +45335,7 @@ GameObject:
   - component: {fileID: 7731440980121659026}
   - component: {fileID: 7731440980123859029}
   - component: {fileID: 7731440980123859028}
+  - component: {fileID: 7731440980123859030}
   - component: {fileID: 7731440980123859027}
   m_Layer: 8
   m_Name: Clip
@@ -45377,3 +45390,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.097641006, y: 0.5186926, z: 0.29052746}
   m_Center: {x: -0.0021666288, y: -0.30965215, z: 0.21437103}
+--- !u!114 &7731440980123859030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731440980123859026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99fd77a912a59c4e977f1dc520bcc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magIn: 0
+  gun: {fileID: 0}
+  gunName: 
+  ammoCount: 0
+  ammoMax: 0
+  ammoPool: 0
+  poolCap: 0

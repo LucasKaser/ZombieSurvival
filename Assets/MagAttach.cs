@@ -5,13 +5,20 @@ using UnityEngine;
 public class MagAttach : MonoBehaviour
 {
     public GameObject mag;
+    public GameObject reloader;
     public GameObject Gun;
     public GameObject Attach;
     public bool magIn = true;
+    public int ammoCount; //dynamic
+    public int ammoMax; //static
+    public int ammoPool; //dynamic
+    public int poolCap; //static
+    public string gunName;
 
     private void Start()
     {
-        magIn = false;
+        magIn = true;
+        gunName = Gun.name;
     }
 
     private void Update()
@@ -28,8 +35,49 @@ public class MagAttach : MonoBehaviour
         {
             magIn = false;
         }
+
+        /*switch (gunName)
+        {
+            case "g36":
+                ammoMax = 30;
+                poolCap = 300;
+                break;
+            case "":
+                ammoMax = 30;
+                poolCap = 300;
+                break;
+            case "Disert Egal 50 CAL":
+                ammoMax = 7;
+                poolCap = 35;
+                break;
+            case "2":
+                ammoMax = 30;
+                poolCap = 300;
+                break;
+            case "3":
+                ammoMax = 30;
+                poolCap = 300;
+                break;
+            case "4":
+                ammoMax = 30;
+                poolCap = 300;
+                break;
+            case "5":
+                ammoMax = 30;
+                poolCap = 300;
+                break;
+            case "6":
+                ammoMax = 30;
+                poolCap = 300;
+                break;
+            case "7":
+                ammoMax = 30;
+                poolCap = 300;
+                break;
+        }*/
     }
-    
+
+
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Mag")
@@ -66,10 +114,6 @@ public class MagAttach : MonoBehaviour
 
         }
     }
-
-
-
-
 
 
 
