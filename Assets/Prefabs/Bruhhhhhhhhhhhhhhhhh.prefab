@@ -502,6 +502,8 @@ GameObject:
   - component: {fileID: 2566209367277240802}
   - component: {fileID: 205688874121410159}
   - component: {fileID: 5047541614246864766}
+  - component: {fileID: 1301777522670483497}
+  - component: {fileID: 2244488122050760288}
   m_Layer: 0
   m_Name: Base HumanHead
   m_TagString: Untagged
@@ -618,6 +620,39 @@ MonoBehaviour:
   Player: {fileID: 0}
   dead: 0
   zombie: {fileID: 2287176287124802384}
+--- !u!114 &1301777522670483497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517942476944690357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62bc43ff47ae3d41bf6203906304c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Zombie: {fileID: 2287176287124802384}
+  grabbutton: 4096
+  collide: {fileID: 1553191189471192584}
+--- !u!114 &2244488122050760288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517942476944690357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 0
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &1761427607772112012
 GameObject:
   m_ObjectHideFlags: 0
