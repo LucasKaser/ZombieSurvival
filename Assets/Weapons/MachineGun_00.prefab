@@ -126,7 +126,6 @@ GameObject:
   - component: {fileID: 9096725999326576293}
   - component: {fileID: 5991700629601461374}
   - component: {fileID: 891768789}
-  - component: {fileID: 891768788}
   - component: {fileID: 3391461766618898326}
   m_Layer: 8
   m_Name: MachineGun_00
@@ -336,25 +335,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6914158, y: 0.15885973, z: 0.14924175}
   m_Center: {x: -0.09760237, y: 0.10587005, z: 0.0128082335}
---- !u!114 &891768788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3425941968436568108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 605472858867202329, guid: 85ef6673411f1ab4cb479ed4ea673127,
-    type: 3}
-  m_grabPoints: []
-  m_materialColorField: 
 --- !u!54 &3391461766618898326
 Rigidbody:
   m_ObjectHideFlags: 0
