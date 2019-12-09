@@ -284,7 +284,7 @@ MonoBehaviour:
   bang: {fileID: 6976633983387386940}
   bang2: {fileID: 8300000, guid: 5632a5b11c5f865499f90b462805bb66, type: 3}
   shotPower: 10000
-  shoot: 0
+  shoot: 1
 --- !u!82 &6976633983387386940
 AudioSource:
   m_ObjectHideFlags: 0

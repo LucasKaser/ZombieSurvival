@@ -14,7 +14,10 @@ public class FullAuto : MonoBehaviour
     public AudioClip bang2;
     public float shotPower = 100f;
     public bool shoot;
-    
+
+    //ui says no ammo or audio making empty click
+    public GameObject noAmmo;
+    bool noAmmoRunning = false;
 
 
     void Start()
@@ -42,35 +45,53 @@ public class FullAuto : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("Fire", false);
         }
+        if (noAmmoRunning)
+        {
+            noAmmo.SetActive(true);
+        }
+        if (!noAmmoRunning)
+        {
+            noAmmo.SetActive(false);
+        }
     }
 
 
     void Shoot()
     {
 
-     
-        
-          
 
-            //  GameObject bullet;
-            //  bullet = Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation);
-            // bullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
 
+
+
+        //  GameObject bullet;
+        //  bullet = Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation);
+        // bullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+        if (GetComponent<MagAttach>().magIn == true)
+        {
             GameObject tempFlash;
             Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
             tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
             bang.PlayOneShot(bang2);
+        }
+        else
+        {
+            noAmmoRunning = true;
+        }
+    }
             // Destroy(tempFlash, 0.5f);
             //  Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation).GetComponent<Rigidbody>().AddForce(casingExitLocation.right * 100f);
         
-    }
+
 
     void CasingRelease()
     {
-         GameObject casing;
-        casing = Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation) as GameObject;
-        casing.GetComponent<Rigidbody>().AddExplosionForce(550f, (casingExitLocation.position - casingExitLocation.right * 0.3f - casingExitLocation.up * 0.6f), 1f);
-        casing.GetComponent<Rigidbody>().AddTorque(new Vector3(0, Random.Range(100f, 500f), Random.Range(10f, 1000f)), ForceMode.Impulse);
+        if (GetComponent<MagAttach>().magIn == true)
+        {
+            GameObject casing;
+            casing = Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation) as GameObject;
+            casing.GetComponent<Rigidbody>().AddExplosionForce(550f, (casingExitLocation.position - casingExitLocation.right * 0.3f - casingExitLocation.up * 0.6f), 1f);
+            casing.GetComponent<Rigidbody>().AddTorque(new Vector3(0, Random.Range(100f, 500f), Random.Range(10f, 1000f)), ForceMode.Impulse);
+        }
     }
 
 
