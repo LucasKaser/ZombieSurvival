@@ -5,7 +5,7 @@ using UnityEngine;
 public class MagAttach : MonoBehaviour
 {
     public GameObject mag;
-    public GameObject reloader;
+    //public GameObject reloader;
     public GameObject Gun;
     public GameObject Attach;
     public bool magIn = true;
@@ -33,7 +33,7 @@ public class MagAttach : MonoBehaviour
         }
         if (mag.transform.parent != Gun)
         {
-            magIn = false;
+            //magIn = false;
         }
 
         /*switch (gunName)
@@ -80,7 +80,7 @@ public class MagAttach : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Mag")
+        if (other.gameObject.tag == "Mag" && other.gameObject == mag)
         {
             if(other.gameObject.GetComponent<OVRGrabbable>().grabbedBy == null)
             {

@@ -12,14 +12,15 @@ public class AmmoScript : MonoBehaviour
     public int ammoMax; //static
     public int ammoPool; //dynamic
     public int poolCap; //static
+    public bool firstClip = false;
 
     // Start is called before the first frame update
     void Start()
     {
         gun = transform.parent.gameObject;
         gunName = gun.name;
-        ammoCount = ammoMax;
-        ammoPool = poolCap;
+        //ammoCount = ammoMax;
+        //ammoPool = poolCap;
     }
     // Update is called once per frame
     void Update()
@@ -30,27 +31,27 @@ public class AmmoScript : MonoBehaviour
                 ammoMax = 30;
                 poolCap = 300;
                 break;
-            case "":
+            case "UMP-45":
                 ammoMax = 30;
-                poolCap = 300;
+                poolCap = 330;
                 break;
             case "Disert Egal 50 CAL":
                 ammoMax = 7;
                 poolCap = 35;
                 break;
-            case "2":
+            case "Skorpion VZ":
+                ammoMax = 20;
+                poolCap = 240;
+                break;
+            case "Enfield":
+                ammoMax = 10;
+                poolCap = 110;
+                break;
+            case "ak74m":
                 ammoMax = 30;
                 poolCap = 300;
                 break;
-            case "3":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "4":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "5":
+            case "AK12":
                 ammoMax = 30;
                 poolCap = 300;
                 break;
@@ -62,6 +63,22 @@ public class AmmoScript : MonoBehaviour
                 ammoMax = 30;
                 poolCap = 300;
                 break;
+        }
+
+        if (!firstClip)
+        {
+            ammoCount = ammoMax;
+            ammoPool = poolCap;
+            firstClip = true;
+        }
+
+        if(ammoCount < 0)
+        {
+            ammoCount = 0;
+        }
+        if(ammoPool < 0)
+        {
+            ammoPool = 0;
         }
     }
 

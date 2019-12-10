@@ -66,12 +66,13 @@ public class FullAuto : MonoBehaviour
         //  GameObject bullet;
         //  bullet = Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation);
         // bullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
-        if (GetComponent<MagAttach>().magIn == true)
+        if (GetComponent<MagAttach>().magIn == true && GetComponentInChildren<AmmoScript>().ammoCount > 0)
         {
             GameObject tempFlash;
             Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
             tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
             bang.PlayOneShot(bang2);
+            GetComponentInChildren<AmmoScript>().ammoCount -= 1;
         }
         else
         {
@@ -85,7 +86,7 @@ public class FullAuto : MonoBehaviour
 
     void CasingRelease()
     {
-        if (GetComponent<MagAttach>().magIn == true)
+        if (GetComponent<MagAttach>().magIn == true && GetComponentInChildren<AmmoScript>().ammoCount > 0)
         {
             GameObject casing;
             casing = Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation) as GameObject;
