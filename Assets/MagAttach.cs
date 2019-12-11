@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MagAttach : MonoBehaviour
 {
@@ -9,11 +10,8 @@ public class MagAttach : MonoBehaviour
     public GameObject Gun;
     public GameObject Attach;
     public bool magIn = true;
-    public int ammoCount; //dynamic
-    public int ammoMax; //static
-    public int ammoPool; //dynamic
-    public int poolCap; //static
     public string gunName;
+    public Text ammoText;
 
     private void Start()
     {
@@ -36,45 +34,14 @@ public class MagAttach : MonoBehaviour
             //magIn = false;
         }
 
-        /*switch (gunName)
+        if(mag.transform.parent.gameObject == Gun)
         {
-            case "g36":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "Disert Egal 50 CAL":
-                ammoMax = 7;
-                poolCap = 35;
-                break;
-            case "2":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "3":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "4":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "5":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "6":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-            case "7":
-                ammoMax = 30;
-                poolCap = 300;
-                break;
-        }*/
+            ammoText.GetComponent<Text>().text = "" + mag.GetComponent<AmmoScript>().ammoCount + "/" + mag.GetComponent<AmmoScript>().ammoPool;
+        }
+        else
+        {
+            ammoText.GetComponent<Text>().text = "0/0";
+        }
     }
 
 

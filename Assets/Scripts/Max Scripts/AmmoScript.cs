@@ -32,12 +32,12 @@ public class AmmoScript : MonoBehaviour
                 poolCap = 300;
                 break;
             case "UMP-45":
-                ammoMax = 30;
-                poolCap = 330;
+                ammoMax = 25;
+                poolCap = 275;
                 break;
             case "Disert Egal 50 CAL":
                 ammoMax = 7;
-                poolCap = 35;
+                poolCap = 63;
                 break;
             case "Skorpion VZ":
                 ammoMax = 20;
@@ -55,13 +55,17 @@ public class AmmoScript : MonoBehaviour
                 ammoMax = 30;
                 poolCap = 300;
                 break;
-            case "6":
-                ammoMax = 30;
-                poolCap = 300;
+            case "thompson Variant":
+                ammoMax = 20;
+                poolCap = 120;
                 break;
-            case "7":
-                ammoMax = 30;
-                poolCap = 300;
+            case "PPSh-41":
+                ammoMax = 71;
+                poolCap = 284;
+                break;
+            case "S & W 500":
+                ammoMax = 6;
+                poolCap = 66;
                 break;
         }
 
@@ -84,7 +88,7 @@ public class AmmoScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "reloader" && ammoCount < ammoMax)
+        if(other.gameObject.name == "reloader" && ammoCount < ammoMax && gameObject.transform.parent.gameObject != gun)
         {
             if(ammoPool >= ammoMax)
             {
