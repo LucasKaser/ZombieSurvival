@@ -6,6 +6,7 @@ using UnityEngine;
 public class ZombieGrab : MonoBehaviour
 {
     public GameObject Player;
+    public Animator animator;
     public GameObject Zombie;
     public OVRGrabbable ovrgrabbable;
     public OVRInput.Button grabbutton;
@@ -20,13 +21,14 @@ public class ZombieGrab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ovrgrabbable.isGrabbed)
+        if (ovrgrabbable.isGrabbed && OVRInput.GetDown(grabbutton, ovrgrabbable.grabbedBy.GetController()))
         {
-            Zombie.GetComponent<Animator>().enabled = false;
+            Debug.Log("kinda cringe bruh");
+            animator.enabled = false;
             collide.enabled = false;
 
         }
-        else if(ovrgrabbable.isGrabbed && OVRInput.GetUp(grabbutton))
+        else if(ovrgrabbable.isGrabbed && OVRInput.GetUp(grabbutton, ovrgrabbable.grabbedBy.GetController()))
         {
             ovrgrabbable.grabbedBy.gameObject.GetComponent<OVRGrabber>().ForceRelease(gameObject.GetComponent<OVRGrabbable>());
             Zombie.GetComponent<Animator>().enabled = true;

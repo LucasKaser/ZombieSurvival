@@ -633,8 +633,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  animator: {fileID: 2287176287124802477}
   Zombie: {fileID: 2287176287124802384}
-  grabbutton: 4096
+  ovrgrabbable: {fileID: 0}
+  grabbutton: 4210688
   collide: {fileID: 1553191189471192584}
 --- !u!114 &2244488122050760288
 MonoBehaviour:

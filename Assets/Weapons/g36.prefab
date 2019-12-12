@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743186023652101970}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0000000088338}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.00029993142, y: 0.00029993142, z: 0.00029993142}
   m_Children:
   - {fileID: 3675160422562856746}
@@ -241,7 +241,7 @@ Transform:
   m_GameObject: {fileID: 1406715551869129848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.0000085015, z: 0.029206}
-  m_LocalScale: {x: 0.42171, y: 0.42171, z: 0.42171}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 1406715551868962908}
   - {fileID: 1406715551868962906}
@@ -341,7 +341,7 @@ MonoBehaviour:
   Attach: {fileID: 1875682186284022028}
   magIn: 1
   gunName: 
-  ammoText: {fileID: 0}
+  ammoText: {fileID: 4076885926935211441}
 --- !u!114 &5937478915161679243
 MonoBehaviour:
   m_ObjectHideFlags: 0
