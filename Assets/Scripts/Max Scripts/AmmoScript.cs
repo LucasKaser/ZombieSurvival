@@ -67,6 +67,14 @@ public class AmmoScript : MonoBehaviour
                 ammoMax = 6;
                 poolCap = 66;
                 break;
+                 case "1911":
+                ammoMax = 7;
+                poolCap = 42;
+                break;
+            case "Ak-47 (1)":
+                ammoMax = 30;
+                poolCap = 330;
+                break;
         }
 
         if (!firstClip)
