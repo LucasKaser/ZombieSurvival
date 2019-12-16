@@ -8477,43 +8477,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31fee1c2b8079524babddad687e95210, type: 3}
---- !u!1 &1528622669 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3094669637999415225, guid: 50f62c31f76f8594b8f8051ee6b59e51,
-    type: 3}
-  m_PrefabInstance: {fileID: 3094669637563601371}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1528622670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1528622669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a34d3244b8a7b545a651499826645b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zapper: {fileID: 2143672397}
-  shootingbutton: 8192
---- !u!114 &1528622671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1528622669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!1 &1530844772
 GameObject:
   m_ObjectHideFlags: 0
@@ -12247,12 +12210,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124672333}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2143672397 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7608188684498299390, guid: 50f62c31f76f8594b8f8051ee6b59e51,
-    type: 3}
-  m_PrefabInstance: {fileID: 3094669637563601371}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1000008011791499
 GameObject:
   m_ObjectHideFlags: 0
@@ -49456,11 +49413,6 @@ PrefabInstance:
     - target: {fileID: 3094669637999249751, guid: 50f62c31f76f8594b8f8051ee6b59e51,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608188684498299390, guid: 50f62c31f76f8594b8f8051ee6b59e51,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
