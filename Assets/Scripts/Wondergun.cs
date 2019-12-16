@@ -20,7 +20,7 @@ public class Wondergun : MonoBehaviour
         {
             zapper.SetActive(true);
         }
-        if (ovrgrabbable.isGrabbed && OVRInput.GetDown(shootingbutton, ovrgrabbable.grabbedBy.GetController()))
+        else if (ovrgrabbable.isGrabbed && OVRInput.GetUp(shootingbutton, ovrgrabbable.grabbedBy.GetController()))
         {
             zapper.SetActive(false);
         }

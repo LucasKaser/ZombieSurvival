@@ -75,11 +75,18 @@ public class AmmoScript : MonoBehaviour
                 ammoMax = 30;
                 poolCap = 330;
                 break;
-                
-                    case " M4A1_PBR":
+            case "M4A1_PBR":
                 ammoMax = 30;
                 poolCap = 330;
                 break;
+            case "SubmachineGun":
+                ammoMax = 32;
+                poolCap = 342;
+                break;
+               
+
+
+
         }
 
         if (!firstClip)
