@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 7467566884572090519}
   - component: {fileID: 3875155343327658354}
   - component: {fileID: 9112624501320160948}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Sphere
   m_TagString: 1911
   m_Icon: {fileID: 0}
@@ -155,8 +155,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7608188684498299390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0000000095786, y: 0.00402, z: 0.09162}
-  m_LocalScale: {x: 0.00834, y: 0.00834, z: 0.1576533}
+  m_LocalPosition: {x: 0.0000000095786, y: 0.004, z: 0.1471}
+  m_LocalScale: {x: 0.014580822, y: 0.014580822, z: 0.27562526}
   m_Children:
   - {fileID: 6510943217787123757}
   m_Father: {fileID: 3094669637999249751}
@@ -237,7 +237,7 @@ PrefabInstance:
     - target: {fileID: 1567219249277285227, guid: c10fe50b7e787f244af54e0bf2e52f7a,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1567219249277285230, guid: c10fe50b7e787f244af54e0bf2e52f7a,
         type: 3}
@@ -312,7 +312,12 @@ PrefabInstance:
     - target: {fileID: 1567219249510456512, guid: c10fe50b7e787f244af54e0bf2e52f7a,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567219249277285229, guid: c10fe50b7e787f244af54e0bf2e52f7a,
+        type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c10fe50b7e787f244af54e0bf2e52f7a, type: 3}
