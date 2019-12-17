@@ -13,6 +13,7 @@ public class AmmoScript : MonoBehaviour
     public int ammoPool; //dynamic
     public int poolCap; //static
     public bool firstClip = false;
+    public int dub = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -28,60 +29,60 @@ public class AmmoScript : MonoBehaviour
         switch (gunName)
         {
             case "g36":
-                ammoMax = 30;
-                poolCap = 300;
+                ammoMax = 30 * dub;
+                poolCap = 300 * dub;
                 break;
             case "UMP-45":
-                ammoMax = 25;
-                poolCap = 275;
+                ammoMax = 25 * dub;
+                poolCap = 275 * dub;
                 break;
             case "Disert Egal 50 CAL":
-                ammoMax = 7;
-                poolCap = 63;
+                ammoMax = 7 * dub;
+                poolCap = 63 * dub;
                 break;
             case "Skorpion VZ":
-                ammoMax = 20;
-                poolCap = 240;
+                ammoMax = 20 * dub;
+                poolCap = 240 * dub;
                 break;
             case "Enfield":
-                ammoMax = 10;
-                poolCap = 110;
+                ammoMax = 10 * dub;
+                poolCap = 110 * dub;
                 break;
             case "ak74m":
-                ammoMax = 30;
-                poolCap = 300;
+                ammoMax = 30 * dub;
+                poolCap = 300 * dub;
                 break;
             case "AK12":
-                ammoMax = 30;
-                poolCap = 300;
+                ammoMax = 30 * dub;
+                poolCap = 300 * dub;
                 break;
             case "thompson Variant":
-                ammoMax = 20;
-                poolCap = 120;
+                ammoMax = 20 * dub;
+                poolCap = 120 * dub;
                 break;
             case "PPSh-41":
-                ammoMax = 71;
-                poolCap = 284;
+                ammoMax = 71 * dub;
+                poolCap = 284 * dub;
                 break;
             case "S & W 500":
-                ammoMax = 6;
-                poolCap = 66;
+                ammoMax = 6 * dub;
+                poolCap = 66 * dub;
                 break;
                  case "1911":
-                ammoMax = 7;
-                poolCap = 42;
+                ammoMax = 7 * dub;
+                poolCap = 42 * dub;
                 break;
             case "Ak-47 (1)":
-                ammoMax = 30;
-                poolCap = 330;
+                ammoMax = 30 * dub;
+                poolCap = 330 * dub;
                 break;
             case "M4A1_PBR":
-                ammoMax = 30;
-                poolCap = 330;
+                ammoMax = 30 * dub;
+                poolCap = 330 * dub;
                 break;
             case "SubmachineGun":
-                ammoMax = 32;
-                poolCap = 342;
+                ammoMax = 32 * dub;
+                poolCap = 342 * dub;
                 break;
                
 
