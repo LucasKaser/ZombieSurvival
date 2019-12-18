@@ -843,8 +843,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.018999998, y: 0.15554309, z: 0.06092441}
-  m_Center: {x: 0, y: -0.05702481, z: 0.073848315}
+  m_Size: {x: 0.012701936, y: 0.15554309, z: 0.044981375}
+  m_Center: {x: -0.0007727029, y: -0.05702481, z: 0.08181983}
 --- !u!114 &8095720653190918324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,6 +865,7 @@ MonoBehaviour:
   ammoPool: 0
   poolCap: 0
   firstClip: 0
+  dub: 1
 --- !u!114 &8095720653190918327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +900,7 @@ GameObject:
   - component: {fileID: 849630762024207736}
   - component: {fileID: 8368002484426227871}
   - component: {fileID: 37293492}
+  - component: {fileID: 37293493}
   m_Layer: 8
   m_Name: Disert Egal 50 CAL
   m_TagString: Untagged
@@ -1113,8 +1115,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.05, y: 0.12246881, z: 0.26234746}
-  m_Center: {x: 0, y: 0.011199137, z: -0.004388339}
+  m_Size: {x: 0.05, y: 0.055794027, z: 0.26234746}
+  m_Center: {x: 0, y: 0.04453653, z: -0.004388339}
 --- !u!54 &8368002484426227871
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1149,3 +1151,16 @@ MonoBehaviour:
   magIn: 1
   gunName: 
   ammoText: {fileID: 383991869}
+--- !u!65 &37293493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9053537744334831486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.033325523, y: 0.12628376, z: 0.07788057}
+  m_Center: {x: -0.0028328227, y: 0.004481451, z: 0.07533111}

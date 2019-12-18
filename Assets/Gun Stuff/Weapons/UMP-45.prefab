@@ -317,8 +317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 0
-  m_snapPosition: 1
-  m_snapOrientation: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
   m_snapOffset: {fileID: 605472858867202329, guid: 640905f40ece02c4ab3172af3035aea0,
     type: 3}
   m_grabPoints: []
@@ -472,7 +472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2873630507284477288}
   m_LocalRotation: {x: 0.0017908225, y: -0.9999977, z: -0.0009929938, w: -0.00067558535}
-  m_LocalPosition: {x: 0.035, y: 0.059, z: -0.085}
+  m_LocalPosition: {x: 0.035, y: 0.087, z: -0.063}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 2729105649520294961}
@@ -725,6 +725,7 @@ MonoBehaviour:
   ammoPool: 0
   poolCap: 0
   firstClip: 0
+  dub: 1
 --- !u!1 &4791217692892349648
 GameObject:
   m_ObjectHideFlags: 0

@@ -136,23 +136,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.026326407, y: 0.20466979, z: 0.036049455}
   m_Center: {x: 0.00000047680712, y: -0.054386526, z: -0.0028728552}
---- !u!114 &2044677463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4598621622383509446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
 --- !u!114 &1030534528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +156,24 @@ MonoBehaviour:
   ammoPool: 0
   poolCap: 0
   firstClip: 0
+  dub: 1
+--- !u!114 &2044677463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4598621622383509446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!54 &1373428217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -189,6 +190,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!65 &863704190
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4598748979486434742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.047582787, y: 0.09700389, z: 0.058620382}
+  m_Center: {x: -0.003839783, y: -0.021699317, z: -0.010125873}
+--- !u!65 &863704191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4598748979486434742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.031715795, y: 0.11147154, z: 0.26148194}
+  m_Center: {x: 0.0003764285, y: -0.024444005, z: -0.18769169}
 --- !u!65 &8504199042397771224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -320,7 +347,7 @@ MonoBehaviour:
   casingExitLocation: {fileID: 717846118382293802}
   bang: {fileID: 3463273053403296526}
   bang2: {fileID: 8300000, guid: e0f7ec0797d6b8f4f90595b984fd0380, type: 3}
-  shotPower: 5000
+  shotPower: 10000
   shoot: 0
   noAmmo: {fileID: 0}
 --- !u!114 &6168280187356576110
@@ -341,32 +368,6 @@ MonoBehaviour:
   magIn: 1
   gunName: 
   ammoText: {fileID: 4766467050791780690}
---- !u!65 &863704190
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4598748979486434742}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.047582787, y: 0.09700389, z: 0.058620382}
-  m_Center: {x: -0.003839783, y: -0.021699317, z: -0.010125873}
---- !u!65 &863704191
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4598748979486434742}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.031715795, y: 0.11147154, z: 0.26148194}
-  m_Center: {x: 0.0003764285, y: -0.024444005, z: -0.18769169}
 --- !u!1 &6819155900575455902
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +653,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel location
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1173774559488108273, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
 --- !u!1 &4598748979486434742 stripped
 GameObject:

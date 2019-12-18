@@ -680,7 +680,7 @@ MonoBehaviour:
   Attach: {fileID: 7835542294622371852}
   magIn: 1
   gunName: 
-  ammoText: {fileID: 0}
+  ammoText: {fileID: 1051418168}
 --- !u!1 &860853758150261965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,6 +1219,7 @@ MonoBehaviour:
   ammoPool: 0
   poolCap: 0
   firstClip: 0
+  dub: 1
 --- !u!1 &860853758150261979
 GameObject:
   m_ObjectHideFlags: 0
