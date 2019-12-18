@@ -84,7 +84,11 @@ public class AmmoScript : MonoBehaviour
                 ammoMax = 32 * dub;
                 poolCap = 342 * dub;
                 break;
-               
+            case "SVD":
+                ammoMax = 20;
+                poolCap = 120;
+                break;
+
 
 
 
