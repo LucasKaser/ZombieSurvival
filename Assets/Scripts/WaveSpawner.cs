@@ -18,6 +18,7 @@ public class WaveSpawner : MonoBehaviour
     public Wave[] waves;
     private int nextWave = 0;
     public Transform[] spawnPoints;
+    public List<Transform> isEnabled;
 
     public float timeBetweenWaves = 5;
     public float waveCountDown;
@@ -40,7 +41,7 @@ public class WaveSpawner : MonoBehaviour
     {
         if (waveCountDown <= 0)
         {
-            if( state == SpawnState.WAITING)
+            if (state == SpawnState.WAITING)
             {
                 //check if enemies are still alive
                 if (!EnemyIsAlive())
@@ -65,6 +66,7 @@ public class WaveSpawner : MonoBehaviour
             {
                 if (state != SpawnState.SPAWNING)
                 {
+                    
                     StartCoroutine(SpawnWave(waves[nextWave]));
 
                 }
@@ -77,8 +79,21 @@ public class WaveSpawner : MonoBehaviour
         {
             waveCountDown -= Time.deltaTime;
         }
-        
-        
+
+        for (int i = 0; i < spawnPoints.Length; i++)
+        {
+            if (spawnPoints[i].gameObject.activeSelf == true && !isEnabled.Contains(spawnPoints[i]))
+            {
+                isEnabled.Add(spawnPoints[i]);
+            }
+            else if(spawnPoints[i].gameObject.activeSelf == false /*&& isEnabled.Contains(spawnPoints[i])*/)
+            {
+                isEnabled.Remove(spawnPoints[i]);
+            }
+        }
+
+
+
         void WaveCompleted ()
         {
             Debug.Log("Wave Completed!");
@@ -122,6 +137,9 @@ public class WaveSpawner : MonoBehaviour
         state = SpawnState.SPAWNING;
         for (int i = 0; i < _wave.count; i++)
         {
+            
+            
+            
             SpawnEnemy(_wave.enemy);
             yield return new WaitForSeconds(1f / _wave.rate);
            
@@ -138,8 +156,15 @@ public class WaveSpawner : MonoBehaviour
              
         }
 
-        Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        Instantiate(_enemy, _sp.position, _sp.rotation);
+        foreach (Transform g in isEnabled)
+        {
+            
+        }
+        Transform f = isEnabled[Random.Range(0, isEnabled.Count)];
+        //Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+        Instantiate(_enemy, f.position, f.rotation);
+
+        
     
     }
 
