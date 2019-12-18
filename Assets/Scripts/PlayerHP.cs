@@ -7,12 +7,15 @@ using UnityEngine.UI;
 
 public class PlayerHP : MonoBehaviour
 {
-    public float health = 15;
+    public float health;
+    public float maxHealth = 15;
+    public float healthRegen = 0.05f;
     public GameObject Enemy;
     public float wait;
     public float waiting;
     public int healthre;
     public Text Health;
+    public float colaMult = 1;
    
      
     
@@ -21,6 +24,7 @@ public class PlayerHP : MonoBehaviour
     private void Start()
     {
         healthre = 3;
+        health = maxHealth;
     }
 
     private void OnTriggerStay(Collider other)
@@ -56,15 +60,15 @@ public class PlayerHP : MonoBehaviour
         {
 
 
-            if (health <= 15)
+            if (health <= maxHealth * colaMult)
             {
-                health += .05f;
+                health += healthRegen * colaMult;
             }
-            if (health > 15)
+            if (health > maxHealth * colaMult)
             {
                 
 
-                health = 15;
+                health = maxHealth * colaMult;
             }
         }
         

@@ -30,15 +30,16 @@ public class ColaEquivalent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //ovrgrabbable = GetComponent<OVRGrabbable>();
+        ovrgrabbable = GetComponent<OVRGrabbable>();
         Player = GameObject.FindGameObjectWithTag("Player");
+        colaName = gameObject.name;
     }
 
     // Update is called once per frame
     void Update()
     {
         playerpoints = Player.GetComponent<PlayerPoints>().points;
-        /*if (ovrgrabbable.isGrabbed && playerpoints >= cost)
+        if (ovrgrabbable.isGrabbed && playerpoints >= cost)
         {
             Player.GetComponent<PlayerPoints>().points -= cost;
             switch (colaName)
@@ -56,7 +57,7 @@ public class ColaEquivalent : MonoBehaviour
                     ammoBoost = true;
                     break;
             }
-        }*/
+        }
 
         if(dubDmg == true)
         {
@@ -64,7 +65,7 @@ public class ColaEquivalent : MonoBehaviour
         }
         if(dubHealth == true)
         {
-            //find health script and double it
+            Player.GetComponent<PlayerHP>().colaMult = 2;
         }
         if(fasterWalk == true)
         {
