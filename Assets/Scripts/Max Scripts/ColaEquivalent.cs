@@ -4,19 +4,83 @@ using UnityEngine;
 
 public class ColaEquivalent : MonoBehaviour
 {
-    
+    public GameObject Player;
+    private OVRGrabbable ovrgrabbable;
+    public int playerpoints;
+    public int cost;
+    public string colaName;
+    public GameObject[] magsArray;
+
+    //colas (grabbable objects like door unlocks)
+    public bool dubDmg;
+    public bool dubHealth;
+    public bool fasterWalk;
+    public bool ammoBoost;
+
+    //magics (likely tags or names not gameObjects)
+    //public GameObject maxAmmo;
+    //public GameObject instaKill;
+    //public GameObject waveClear;
+    //public GameObject dubPoints;
+
+    //pack-a-punch
+
     
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        //ovrgrabbable = GetComponent<OVRGrabbable>();
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        playerpoints = Player.GetComponent<PlayerPoints>().points;
+        /*if (ovrgrabbable.isGrabbed && playerpoints >= cost)
+        {
+            Player.GetComponent<PlayerPoints>().points -= cost;
+            switch (colaName)
+            {
+                case "dubDmg":
+                    dubDmg = true;
+                    break;
+                case "dubHealth":
+                    dubHealth = true;
+                    break;
+                case "fasterWalk":
+                    fasterWalk = true;
+                    break;
+                case "ammoBoost":
+                    ammoBoost = true;
+                    break;
+            }
+        }*/
+
+        if(dubDmg == true)
+        {
+            //find damage script and double it
+        }
+        if(dubHealth == true)
+        {
+            //find health script and double it
+        }
+        if(fasterWalk == true)
+        {
+            //find walking script and doubleish it
+        }
+        if(ammoBoost == true)
+        {
+            magsArray = GameObject.FindGameObjectsWithTag("Mag");
+            foreach(GameObject g in magsArray)
+            {
+                Debug.Log(g.name);
+                
+                g.GetComponent<AmmoScript>().dub = 2;
+            }
+        }
+
     }
 }
 
