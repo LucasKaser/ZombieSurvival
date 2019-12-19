@@ -60,7 +60,7 @@ public class EnemyHp : MonoBehaviour
         while (true)
         {
             dead = true;
-            Player.GetComponent<PlayerPoints>().points += 50;
+            Player.GetComponent<PlayerPoints>().points += 50 * Player.GetComponent<PlayerPoints>().pointMult;
             yield return new WaitForSeconds(wait);
             Destroy(gameObject);
 

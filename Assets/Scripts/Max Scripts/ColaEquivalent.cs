@@ -76,7 +76,7 @@ public class ColaEquivalent : MonoBehaviour
             magsArray = GameObject.FindGameObjectsWithTag("Mag");
             foreach(GameObject g in magsArray)
             {
-                Debug.Log(g.name);
+                //Debug.Log(g.name);
                 
                 g.GetComponent<AmmoScript>().dub = 2;
             }
