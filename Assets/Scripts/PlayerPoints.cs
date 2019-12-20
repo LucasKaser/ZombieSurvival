@@ -6,6 +6,7 @@ public class PlayerPoints : MonoBehaviour
 {
     public int points;
     public Text pointtext;
+    public int pointMult = 1;
     // Start is called before the first frame update
     void Start()
     {
