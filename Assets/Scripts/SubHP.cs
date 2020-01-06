@@ -39,7 +39,7 @@ public class SubHP : MonoBehaviour
                 health = 0;
             }
         }
-        else if (instaKill == false)
+        if (instaKill == false)
         {
             if (collision.gameObject.tag == "Damage")
             {

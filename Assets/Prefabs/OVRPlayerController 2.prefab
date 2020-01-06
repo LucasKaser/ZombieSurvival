@@ -1635,8 +1635,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871035280424954892}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.83, y: 1.567, z: 6.02}
+  m_LocalRotation: {x: 0, y: 0.9751303, z: 0, w: -0.22163224}
+  m_LocalPosition: {x: -306.30957, y: 8.822714, z: 259.13202}
   m_LocalScale: {x: 1.24188, y: 1.24188, z: 1.24188}
   m_Children:
   - {fileID: 1871035280424988710}
@@ -1689,6 +1689,7 @@ MonoBehaviour:
   EnableLinearMovement: 1
   EnableRotation: 1
   RotationEitherThumbstick: 0
+  MoveScaleMultiplier: 1
 --- !u!114 &1871035280415034796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1731,6 +1732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 20
   pointtext: {fileID: 1635740852}
+  pointMult: 1
 --- !u!136 &1501022769
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1758,10 +1760,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
+  maxHealth: 15
+  healthRegen: 0.05
   Enemy: {fileID: 2287176287124802384, guid: 23f6f2ea7d9b7504f86f50a71ae4484f, type: 3}
   wait: 0
   waiting: 0
   healthre: 0
+  Health: {fileID: 0}
+  colaMult: 1
 --- !u!1 &1871035280424954894
 GameObject:
   m_ObjectHideFlags: 0
