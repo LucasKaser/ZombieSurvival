@@ -12,6 +12,7 @@ public class EnemyHp : MonoBehaviour
     public GameObject Player;
     public int wait;
     public bool dead;
+    public int deathRoll = 0;
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -61,6 +62,12 @@ public class EnemyHp : MonoBehaviour
         {
             dead = true;
             Player.GetComponent<PlayerPoints>().points += 50 * Player.GetComponent<PlayerPoints>().pointMult;
+            deathRoll = Random.Range(0, 200);
+            if (deathRoll == 0)
+            {
+                //spawn the powerups
+                //subtract from referencescript
+            }
             yield return new WaitForSeconds(wait);
             Destroy(gameObject);
 

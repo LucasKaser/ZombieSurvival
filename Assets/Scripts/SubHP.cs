@@ -36,6 +36,7 @@ public class SubHP : MonoBehaviour
             if (collision.gameObject.tag == "Damage" || collision.gameObject.tag == "1911" || collision.gameObject.tag == "carbine"
                 || collision.gameObject.tag == "ak47" || collision.gameObject.tag == "ak74" || collision.gameObject.tag == "m4" || collision.gameObject.tag == "deagle")
             {
+                Debug.Log("BulletCollision");
                 health = 0;
             }
         }

@@ -52,6 +52,7 @@ public class Powerups : MonoBehaviour
         if(other.gameObject.tag == "instaKill")
         {
             killTimerOn = true;
+            Destroy(other.gameObject);
         }
 
         if(other.gameObject.tag == "maxAmmo")
@@ -62,6 +63,7 @@ public class Powerups : MonoBehaviour
                 g.GetComponent<AmmoScript>().ammoCount = g.GetComponent<AmmoScript>().ammoMax;
                 g.GetComponent<AmmoScript>().ammoPool = g.GetComponent<AmmoScript>().poolCap;
             }
+            Destroy(other.gameObject);
         }
 
         if(other.gameObject.tag == "waveClear")
@@ -72,11 +74,13 @@ public class Powerups : MonoBehaviour
                 Destroy(z);
             }
             gameObject.GetComponent<PlayerPoints>().points += 500 * gameObject.GetComponent<PlayerPoints>().pointMult;
+            Destroy(other.gameObject);
         }
 
         if(other.gameObject.tag == "dubPoints")
         {
             pointsTimerOn = true;
+            Destroy(other.gameObject);
         }
     }
 }
