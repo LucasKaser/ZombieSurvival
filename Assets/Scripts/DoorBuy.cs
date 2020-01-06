@@ -9,6 +9,7 @@ public class DoorBuy : MonoBehaviour
     public int playerpoints;
     public int cost;
     public GameObject Spawner;
+    public GameObject otherside;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,10 @@ public class DoorBuy : MonoBehaviour
         {
             Player.GetComponent<PlayerPoints>().points -= cost;
             Spawner.SetActive(true);
+            if(otherside != null)
+            {
+                Destroy(otherside);
+            }
             Destroy(gameObject);
         }
         else
