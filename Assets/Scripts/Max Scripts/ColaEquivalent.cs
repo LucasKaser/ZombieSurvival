@@ -61,7 +61,7 @@ public class ColaEquivalent : MonoBehaviour
 
         if(dubDmg == true)
         {
-            //find damage script and double it
+            Player.GetComponent<referenceScript>().dmgMult = 2;
         }
         if(dubHealth == true)
         {
@@ -69,7 +69,7 @@ public class ColaEquivalent : MonoBehaviour
         }
         if(fasterWalk == true)
         {
-            //find walking script and doubleish it
+            Player.GetComponent<OVRPlayerController>().MoveScaleMultiplier = 10f;
         }
         if(ammoBoost == true)
         {

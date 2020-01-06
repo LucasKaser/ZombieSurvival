@@ -33,16 +33,25 @@ public class Powerups : MonoBehaviour
             pointsTimerOn = false;
             pointsTimer = 0.0f;
         }
+
+        if(killTimerOn == true)
+        {
+            killTimer += Time.deltaTime;
+            gameObject.GetComponent<referenceScript>().instaKill = true;
+        }
+        if(killTimer >= killTime)
+        {
+            gameObject.GetComponent<referenceScript>().instaKill = false;
+            killTimerOn = false;
+            killTimer = 0.0f;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "instaKill")
         {
-            //REMEMBER TIMER
-            
-            //make all damage insanely high
-            //or set all zombie health to 1
+            killTimerOn = true;
         }
 
         if(other.gameObject.tag == "maxAmmo")
