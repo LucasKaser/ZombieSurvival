@@ -69,7 +69,7 @@ public class ColaEquivalent : MonoBehaviour
         }
         if(fasterWalk == true)
         {
-            Player.GetComponent<OVRPlayerController>().MoveScaleMultiplier = 10f;
+            Player.GetComponent<OVRPlayerController>().MoveScaleMultiplier = 2f;
         }
         if(ammoBoost == true)
         {

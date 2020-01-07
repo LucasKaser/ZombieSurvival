@@ -13,9 +13,18 @@ public class EnemyHp : MonoBehaviour
     public int wait;
     public bool dead;
     public int deathRoll = 0;
+    public GameObject powerup1Pre;
+    public GameObject powerup2Pre;
+    public GameObject powerup3Pre;
+    public GameObject powerup4Pre;
+    public int dRMax = 200;
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        powerup1Pre = GameObject.FindGameObjectWithTag("dubPoints");
+        powerup2Pre = GameObject.FindGameObjectWithTag("waveClear");
+        powerup3Pre = GameObject.FindGameObjectWithTag("maxAmmo");
+        powerup4Pre = GameObject.FindGameObjectWithTag("instaKill");
     }
 
     /*void OnTriggerEnter(Collider collision)
@@ -62,12 +71,29 @@ public class EnemyHp : MonoBehaviour
         {
             dead = true;
             Player.GetComponent<PlayerPoints>().points += 50 * Player.GetComponent<PlayerPoints>().pointMult;
-            deathRoll = Random.Range(0, 200);
-            if (deathRoll == 0)
+            deathRoll = Random.Range(0, dRMax);
+
+            if (deathRoll == 0 && Player.GetComponent<referenceScript>().powerupCap > 0)
             {
-                //spawn the powerups
-                //subtract from referencescript
+                GameObject powerup1 = Instantiate(powerup1Pre, gameObject.transform.position, Quaternion.identity);
+                Player.GetComponent<referenceScript>().powerupCap -= 1;
             }
+            if(deathRoll == 1 && Player.GetComponent<referenceScript>().powerupCap > 0)
+            {
+                GameObject powerup2 = Instantiate(powerup2Pre, gameObject.transform.position, Quaternion.identity);
+                Player.GetComponent<referenceScript>().powerupCap -= 1;
+            }
+            if (deathRoll == 2 && Player.GetComponent<referenceScript>().powerupCap > 0)
+            {
+                GameObject powerup3 = Instantiate(powerup3Pre, gameObject.transform.position, Quaternion.identity);
+                Player.GetComponent<referenceScript>().powerupCap -= 1;
+            }
+            if (deathRoll == 3 && Player.GetComponent<referenceScript>().powerupCap > 0)
+            {
+                GameObject powerup4 = Instantiate(powerup4Pre, gameObject.transform.position, Quaternion.identity);
+                Player.GetComponent<referenceScript>().powerupCap -= 1;
+            }
+
             yield return new WaitForSeconds(wait);
             Destroy(gameObject);
 
