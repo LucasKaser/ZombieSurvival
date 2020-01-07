@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2956327745542477423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1005350924413876589}
+  m_Layer: 0
+  m_Name: attachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1005350924413876589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2956327745542477423}
+  m_LocalRotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.219574, y: -3.4860883, z: 0.04989153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6520153171123975404}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4891117033000903985
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +310,7 @@ GameObject:
   - component: {fileID: 346990442111158187}
   - component: {fileID: 2786290482453085920}
   - component: {fileID: 648625656}
+  - component: {fileID: 4131546002096145630}
   m_Layer: 8
   m_Name: SubmachineGun
   m_TagString: Untagged
@@ -312,6 +343,7 @@ Transform:
   - {fileID: 6520153171123975398}
   - {fileID: 7437459306069759847}
   - {fileID: 449155180806089246}
+  - {fileID: 1005350924413876589}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -371,6 +403,7 @@ MonoBehaviour:
   bang2: {fileID: 8300000, guid: a60d044f2539a8e43b767edf3374fcef, type: 3}
   shotPower: 10000
   shoot: 0
+  noAmmo: {fileID: 0}
 --- !u!82 &7930301242528779122
 AudioSource:
   m_ObjectHideFlags: 0
@@ -478,8 +511,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 71.14, y: 35.2, z: 6.41}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 71.14, y: 20.56091, z: 6.41}
+  m_Center: {x: -0, y: 7.319534, z: 0}
 --- !u!114 &2786290482453085920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,6 +546,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &4131546002096145630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520153171124070604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f92878cfc45f6740b6332d1789394b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mag: {fileID: 6520153171124070610}
+  Gun: {fileID: 6520153171124070604}
+  Attach: {fileID: 2956327745542477423}
+  magIn: 1
+  gunName: 
+  ammoText: {fileID: 0}
 --- !u!1 &6520153171124070606
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +731,8 @@ GameObject:
   - component: {fileID: 6520153171123975410}
   - component: {fileID: 6520153171121108178}
   - component: {fileID: 6520153171122075154}
+  - component: {fileID: 1388735605779896701}
+  - component: {fileID: 403265982783007978}
   m_Layer: 8
   m_Name: mag
   m_TagString: Untagged
@@ -747,6 +800,40 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1388735605779896701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520153171124070610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99fd77a912a59c4e977f1dc520bcc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magIn: 0
+  gun: {fileID: 0}
+  gunName: 
+  ammoCount: 0
+  ammoMax: 0
+  ammoPool: 0
+  poolCap: 0
+  firstClip: 0
+  dub: 1
+--- !u!65 &403265982783007978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520153171124070610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.2303, y: 30.367401, z: 4.1548}
+  m_Center: {x: -0.13826323, y: 0.8734875, z: 0.000007867813}
 --- !u!1 &6520153171124070612
 GameObject:
   m_ObjectHideFlags: 0

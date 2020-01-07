@@ -21,17 +21,18 @@ public class SubHP : MonoBehaviour
     public int dmgAk74 = 1;
     public int dmgM4 = 1;
     public int dmgDeagle = 3;
+    public int ifInsta = 1;
 
     public int dmgMult;
 
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        dmgMult = Player.GetComponent<referenceScript>().dmgMult;
+        dmgMult = Player.GetComponent<referenceScript>().dmgMult * ifInsta;
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (instaKill == true)
+        /*if (instaKill == true)
         {
             if (collision.gameObject.tag == "Damage" || collision.gameObject.tag == "1911" || collision.gameObject.tag == "carbine"
                 || collision.gameObject.tag == "ak47" || collision.gameObject.tag == "ak74" || collision.gameObject.tag == "m4" || collision.gameObject.tag == "deagle")
@@ -39,9 +40,7 @@ public class SubHP : MonoBehaviour
                 Debug.Log("BulletCollision");
                 health = 0;
             }
-        }
-        if (instaKill == false)
-        {
+        }*/
             if (collision.gameObject.tag == "Damage")
             {
                 health--;
@@ -99,11 +98,13 @@ public class SubHP : MonoBehaviour
                     Player.GetComponent<PlayerPoints>().points += 10;
                 }
             }
-        }
+        
     }
     private void Update()
     {
-        dmgMult = Player.GetComponent<referenceScript>().dmgMult;
+        Player = GameObject.FindGameObjectWithTag("Player");
+
+        dmgMult = Player.GetComponent<referenceScript>().dmgMult * ifInsta;
 
         dmgDmg = 1 * dmgMult;
         dmg1911 = 1 * dmgMult;
@@ -113,6 +114,14 @@ public class SubHP : MonoBehaviour
         dmgM4 = 1 * dmgMult;
         dmgDeagle = 3 * dmgMult;
 
+        if (Player.GetComponent<referenceScript>().instaKill == true)
+        {
+            ifInsta = 9999;
+        }
+        if(Player.GetComponent<referenceScript>().instaKill == false)
+        {
+            ifInsta = 1;
+        }
         if (health <= 0)
         {
             if (!dead)
