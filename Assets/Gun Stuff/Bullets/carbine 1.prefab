@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3921422207612103455}
   m_Layer: 10
   m_Name: carbine 1
-  m_TagString: carbine
+  m_TagString: enfield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

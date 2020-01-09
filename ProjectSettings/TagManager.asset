@@ -18,6 +18,10 @@ TagManager:
   - waveClear
   - instaKill
   - dubPoints
+  - ammoBoostAttach
+  - dubDmgAttach
+  - dubHealthAttach
+  - fasterWalkAttach
   layers:
   - Default
   - TransparentFX

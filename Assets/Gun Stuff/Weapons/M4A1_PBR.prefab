@@ -1741,8 +1741,7 @@ MonoBehaviour:
   m_allowOffhandGrab: 1
   m_snapPosition: 0
   m_snapOrientation: 0
-  m_snapOffset: {fileID: 605472858867202329, guid: 35b779705e294a54fa59e7a12b8a30a4,
-    type: 3}
+  m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!114 &1383892142328996983
 MonoBehaviour:

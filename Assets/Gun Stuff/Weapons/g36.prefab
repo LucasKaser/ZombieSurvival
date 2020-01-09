@@ -357,8 +357,7 @@ MonoBehaviour:
   m_allowOffhandGrab: 1
   m_snapPosition: 0
   m_snapOrientation: 0
-  m_snapOffset: {fileID: 605472858867202329, guid: 2d80d9d6fee6fca4aa83cfbbe70fd45a,
-    type: 3}
+  m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!82 &4541153344433501358
 AudioSource:
@@ -909,6 +908,7 @@ MonoBehaviour:
   ammoPool: 0
   poolCap: 0
   firstClip: 0
+  dub: 1
 --- !u!114 &7731440980123859027
 MonoBehaviour:
   m_ObjectHideFlags: 0

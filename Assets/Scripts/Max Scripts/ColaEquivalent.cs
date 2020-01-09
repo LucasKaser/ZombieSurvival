@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColaEquivalent : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject attachPoint;
     private OVRGrabbable ovrgrabbable;
     public int playerpoints;
     public int cost;
@@ -46,17 +47,26 @@ public class ColaEquivalent : MonoBehaviour
             {
                 case "dubDmg":
                     dubDmg = true;
+                    attachPoint = GameObject.FindGameObjectWithTag("dubDmgAttach");
                     break;
                 case "dubHealth":
                     dubHealth = true;
+                    attachPoint = GameObject.FindGameObjectWithTag("dubHealthAttach");
                     break;
                 case "fasterWalk":
                     fasterWalk = true;
+                    attachPoint = GameObject.FindGameObjectWithTag("fasterWalkAttach");
                     break;
                 case "ammoBoost":
                     ammoBoost = true;
+                    attachPoint = GameObject.FindGameObjectWithTag("ammoBoostAttach");
                     break;
             }
+        }
+        if (!ovrgrabbable.isGrabbed)
+        {
+            transform.position = attachPoint.transform.position;
+            transform.rotation = attachPoint.transform.rotation;
         }
 
         if(dubDmg == true)

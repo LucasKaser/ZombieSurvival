@@ -9,9 +9,9 @@ public class Powerups : MonoBehaviour
     public bool pointsTimerOn = false;
     public bool killTimerOn = false;
     public float pointsTimer = 0.0f;
-    public float pointsTime = 10.0f;
+    public float pointsTime = 25.0f;
     public float killTimer = 0.0f;
-    public float killTime = 10.0f;
+    public float killTime = 25.0f;
 
     // Start is called before the first frame update
     void Start()

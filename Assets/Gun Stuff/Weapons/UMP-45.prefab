@@ -316,11 +316,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 0
+  m_allowOffhandGrab: 1
   m_snapPosition: 0
   m_snapOrientation: 0
-  m_snapOffset: {fileID: 605472858867202329, guid: 640905f40ece02c4ab3172af3035aea0,
-    type: 3}
+  m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!54 &1342733043
 Rigidbody:
