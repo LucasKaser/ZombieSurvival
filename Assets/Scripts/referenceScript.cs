@@ -15,3 +15,8 @@ public class referenceScript : MonoBehaviour
         dmgMult = 1;
     }
 }
+
+
+//known bugs or issues
+//the insta kill doesn't delete after passing through it
+//the knife does no damage

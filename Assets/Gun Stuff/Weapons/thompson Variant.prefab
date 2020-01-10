@@ -535,16 +535,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8770092426867632184, guid: 062d25c461a30fb4f86b3c39eb42a60b,
         type: 3}
-      propertyPath: m_snapPosition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8770092426867632184, guid: 062d25c461a30fb4f86b3c39eb42a60b,
-        type: 3}
-      propertyPath: m_snapOrientation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8770092426867632184, guid: 062d25c461a30fb4f86b3c39eb42a60b,
-        type: 3}
       propertyPath: m_snapOffset
       value: 
       objectReference: {fileID: 0}
@@ -555,6 +545,10 @@ PrefabInstance:
     - target: {fileID: 1649809553526618, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
       propertyPath: m_TagString
       value: Mag
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900647680977714, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5552532049841845061, guid: 062d25c461a30fb4f86b3c39eb42a60b,
         type: 3}
@@ -608,10 +602,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel location
-      objectReference: {fileID: 0}
-    - target: {fileID: 1900647680977714, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 062d25c461a30fb4f86b3c39eb42a60b, type: 3}

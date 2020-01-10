@@ -414,6 +414,7 @@ MonoBehaviour:
   ammoPool: 0
   poolCap: 0
   firstClip: 0
+  dub: 1
 --- !u!1 &7811818012288301154
 GameObject:
   m_ObjectHideFlags: 0

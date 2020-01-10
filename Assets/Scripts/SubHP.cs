@@ -34,7 +34,7 @@ public class SubHP : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Knife")
+        if(collision.gameObject.tag == "knife")
         {
             health -= dmgKnife;
             if (health > 0)

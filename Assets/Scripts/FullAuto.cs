@@ -16,7 +16,7 @@ public class FullAuto : MonoBehaviour
     public bool shoot;
 
     //ui says no ammo or audio making empty click
-    public GameObject noAmmo;
+    //public GameObject noAmmo;
     bool noAmmoRunning = false;
 
 
@@ -45,14 +45,14 @@ public class FullAuto : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("Fire", false);
         }
-        if (noAmmoRunning)
+        /*if (noAmmoRunning)
         {
             noAmmo.SetActive(true);
         }
         if (!noAmmoRunning)
         {
             noAmmo.SetActive(false);
-        }
+        }*/
     }
 
 

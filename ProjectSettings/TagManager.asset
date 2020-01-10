@@ -22,6 +22,7 @@ TagManager:
   - dubDmgAttach
   - dubHealthAttach
   - fasterWalkAttach
+  - knifeAttach
   layers:
   - Default
   - TransparentFX

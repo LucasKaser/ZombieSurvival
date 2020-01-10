@@ -17,7 +17,7 @@ public class SimpleShoot : MonoBehaviour
 
     //see full auto
     public bool noAmmoRunning = false;
-    public GameObject noAmmo;
+    //public GameObject noAmmo;
 
     void Start()
     {
@@ -40,14 +40,14 @@ public class SimpleShoot : MonoBehaviour
             shoot = false;
             TriggerShoot();
         }
-        if (noAmmoRunning)
+        /*if (noAmmoRunning)
         {
             noAmmo.SetActive(true);
         }
         if (!noAmmoRunning)
         {
             noAmmo.SetActive(false);
-        }
+        }*/
     }
 
 
