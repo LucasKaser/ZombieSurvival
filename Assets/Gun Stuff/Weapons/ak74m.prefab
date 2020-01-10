@@ -510,6 +510,7 @@ MonoBehaviour:
   ammoPool: 0
   poolCap: 0
   firstClip: 0
+  dub: 1
 --- !u!1 &509592946186764608
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +664,6 @@ MonoBehaviour:
   bang2: {fileID: 8300000, guid: fc0504682fd453d4aa5543db55c08bbf, type: 3}
   shotPower: 10000
   shoot: 0
-  noAmmo: {fileID: 0}
 --- !u!82 &770419863126047947
 AudioSource:
   m_ObjectHideFlags: 0
@@ -773,8 +773,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 0
-  m_snapPosition: 1
-  m_snapOrientation: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!54 &947404144

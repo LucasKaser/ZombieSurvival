@@ -738,7 +738,6 @@ MonoBehaviour:
   shotPower: 10000
   shoot: 0
   noAmmoRunning: 0
-  noAmmo: {fileID: 0}
 --- !u!54 &5129905333904602546
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -909,7 +908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 1
   m_snapPosition: 0
-  m_snapOrientation: 1
+  m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
 --- !u!1 &5131290553711466945
