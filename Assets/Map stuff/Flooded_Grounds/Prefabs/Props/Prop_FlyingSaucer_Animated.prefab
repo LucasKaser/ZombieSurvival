@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 404048}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Prop_FlyingSaucer_Animated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 3309426}
   - component: {fileID: 2394554}
   - component: {fileID: 9521874}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FlyingSaucer_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 428914}
   - component: {fileID: 19873580}
   - component: {fileID: 19994998}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Part_ExhaustRings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
