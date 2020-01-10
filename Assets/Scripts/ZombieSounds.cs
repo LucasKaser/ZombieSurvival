@@ -19,7 +19,7 @@ public class ZombieSounds : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 5)
+        if (timer >= 10)
         {
             timer = 0;
             int i = Random.Range(1, 4);
@@ -31,7 +31,7 @@ public class ZombieSounds : MonoBehaviour
             {
                 zombie.PlayOneShot(clip2);
             }
-            if (i == 1)
+            if (i == 3)
             {
                 zombie.PlayOneShot(clip3);
             }
