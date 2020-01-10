@@ -23,6 +23,7 @@ public class SubHP : MonoBehaviour
     public int dmgDeagle = 4;
     public int dmgEnfield = 8;
     public int ifInsta = 1;
+    public int dmgKnife = 1;
 
     public int dmgMult;
 
@@ -33,80 +34,79 @@ public class SubHP : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        /*if (instaKill == true)
+        if(collision.gameObject.tag == "Knife")
         {
-            if (collision.gameObject.tag == "Damage" || collision.gameObject.tag == "1911" || collision.gameObject.tag == "carbine"
-                || collision.gameObject.tag == "ak47" || collision.gameObject.tag == "ak74" || collision.gameObject.tag == "m4" || collision.gameObject.tag == "deagle")
+            health -= dmgKnife;
+            if (health > 0)
             {
-                Debug.Log("BulletCollision");
-                health = 0;
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
-        }*/
-            if (collision.gameObject.tag == "Damage")
+        }
+        if (collision.gameObject.tag == "Damage")
+        {
+            health -= dmgDmg;
+            if (health > 0)
             {
-                health -= dmgDmg;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
-            }
-            if (collision.gameObject.tag == "1911")
+        }
+        if (collision.gameObject.tag == "1911")
+        {
+            health -= dmg1911;
+            if (health > 0)
             {
-                health -= dmg1911;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
 
-            }
-            if (collision.gameObject.tag == "carbine")
+        }
+        if (collision.gameObject.tag == "carbine")
+        {
+            health -= dmgCarbine;
+            if (health > 0)
             {
-                health -= dmgCarbine;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
-            }
-            if (collision.gameObject.tag == "ak47")
+        }
+        if (collision.gameObject.tag == "ak47")
+        {
+            health -= dmgAk47;
+            if (health > 0)
             {
-                health -= dmgAk47;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
-            }
-            if (collision.gameObject.tag == "ak74")
+        }
+        if (collision.gameObject.tag == "ak74")
+        {
+            health -= dmgAk74;
+            if (health > 0)
             {
-                health -= dmgAk74;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
-            }
-            if (collision.gameObject.tag == "m4")
+        }
+        if (collision.gameObject.tag == "m4")
+        {
+            health -= dmgM4;
+            if (health > 0)
             {
-                health -= dmgM4;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
-            }
-            if (collision.gameObject.tag == "deagle")
+        }
+        if (collision.gameObject.tag == "deagle")
+        {
+            health -= dmgDeagle;
+            if (health > 0)
             {
-                health -= dmgDeagle;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
-                }
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
-             if (collision.gameObject.tag == "enfield")
+        }
+        if (collision.gameObject.tag == "enfield")
+        {
+            health -= dmgEnfield;
+            if (health > 0)
             {
-                health -= dmgEnfield;
-                if (health > 0)
-                {
-                    Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
-                }
+                Player.GetComponent<PlayerPoints>().points += 10 * Player.GetComponent<PlayerPoints>().pointMult;
             }
+        }
 
     }
     private void Update()
@@ -123,6 +123,7 @@ public class SubHP : MonoBehaviour
         dmgM4 = 1 * dmgMult;
         dmgDeagle = 4 * dmgMult;
         dmgEnfield = 8 * dmgMult;
+        dmgKnife = 1 * dmgMult;
         if (Player.GetComponent<referenceScript>().instaKill == true)
         {
             ifInsta = 9999;
