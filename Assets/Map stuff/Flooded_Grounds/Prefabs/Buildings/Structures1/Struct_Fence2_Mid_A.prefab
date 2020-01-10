@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3324768}
   - component: {fileID: 2327090}
   - component: {fileID: 6581810}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Struct_Fence2_Mid_A_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ BoxCollider:
   m_GameObject: {fileID: 140290}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.625373, y: 1.313875, z: 0.20825693}
   m_Center: {x: -3.2194433, y: 0.64857435, z: 0.06567007}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 3350744}
   - component: {fileID: 2383128}
   - component: {fileID: 6547330}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Struct_Fence2_Mid_A_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,10 +180,10 @@ BoxCollider:
   m_GameObject: {fileID: 169984}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 6.625373, y: 1.3483493, z: 0.20825693}
-  m_Center: {x: -3.2194433, y: 0.66581154, z: 0.06567007}
+  m_Size: {x: 6.625373, y: 5.2942, z: 0.20825693}
+  m_Center: {x: -3.2194433, y: 2.6387367, z: 0.06567007}
 --- !u!1 &176956
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 3342250}
   - component: {fileID: 2308928}
   - component: {fileID: 6505332}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Struct_Fence2_Mid_A_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ BoxCollider:
   m_GameObject: {fileID: 176956}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.625373, y: 1.3483493, z: 0.20825693}
   m_Center: {x: -3.2194433, y: 0.66581154, z: 0.06567007}
@@ -286,7 +286,8 @@ GameObject:
   m_Component:
   - component: {fileID: 490552}
   - component: {fileID: 20592644}
-  m_Layer: 0
+  - component: {fileID: 806153392}
+  m_Layer: 15
   m_Name: Struct_Fence2_Mid_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,3 +338,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2327090}
   m_Enabled: 1
+--- !u!65 &806153392
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.0158386, y: 4.311582, z: 0.37251282}
+  m_Center: {x: -3.0079193, y: 2.146568, z: 0.07514191}
