@@ -30,6 +30,7 @@ public class BuyGun : MonoBehaviour
             Instantiate(Gun, transform.position, Quaternion.identity);
             Player.GetComponent<PlayerPoints>().points -= cost;
             ovrgrabbable.grabbedBy.gameObject.GetComponent<OVRGrabber>().ForceRelease(gameObject.GetComponent<OVRGrabbable>());
+            Destroy(gameObject);
         }
         else
         {
