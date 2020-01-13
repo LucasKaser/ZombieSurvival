@@ -21,10 +21,10 @@ public class EnemyHp : MonoBehaviour
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        powerup1Pre = GameObject.FindGameObjectWithTag("dubPoints");
-        powerup2Pre = GameObject.FindGameObjectWithTag("waveClear");
-        powerup3Pre = GameObject.FindGameObjectWithTag("maxAmmo");
-        powerup4Pre = GameObject.FindGameObjectWithTag("instaKill");
+        //powerup1Pre = GameObject.FindGameObjectWithTag("dubPoints");
+        //powerup2Pre = GameObject.FindGameObjectWithTag("waveClear");
+        //powerup3Pre = GameObject.FindGameObjectWithTag("maxAmmo");
+        //powerup4Pre = GameObject.FindGameObjectWithTag("instaKill");
     }
 
     /*void OnTriggerEnter(Collider collision)
