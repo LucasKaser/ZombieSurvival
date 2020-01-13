@@ -16,14 +16,10 @@ public class referenceScript : MonoBehaviour
     }
 }
 
-
-//known bugs or issues
-//the insta kill doesn't delete after passing through it
-//the knife does no damage
-
 //things to do
+
 //gun placement
-//cola placement
+//cola placement *
 //map design
 //spawning
 //assets

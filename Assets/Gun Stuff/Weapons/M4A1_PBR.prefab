@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 3879260353643993264}
   m_Layer: 8
   m_Name: M4A1_Magazine
-  m_TagString: Mag
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1725,7 +1725,6 @@ MonoBehaviour:
   bang2: {fileID: 8300000, guid: bb430c142c370694692686d329815826, type: 3}
   shotPower: 10000
   shoot: 0
-  noAmmo: {fileID: 0}
 --- !u!114 &8341335352020476587
 MonoBehaviour:
   m_ObjectHideFlags: 0

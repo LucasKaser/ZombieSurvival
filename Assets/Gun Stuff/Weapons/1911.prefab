@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 5125173329621952203}
   m_Layer: 8
   m_Name: M1911A_Magazine_Black
-  m_TagString: Mag
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
