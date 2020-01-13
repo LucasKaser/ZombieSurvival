@@ -28,63 +28,63 @@ public class AmmoScript : MonoBehaviour
     {
         switch (gunName)
         {
-            case "g36":
+            case "g36(Clone)":
                 ammoMax = 30 * dub;
                 poolCap = 300 * dub;
                 break;
-            case "UMP-45":
+            case "UMP-45(Clone)":
                 ammoMax = 25 * dub;
                 poolCap = 275 * dub;
                 break;
-            case "Disert Egal 50 CAL":
+            case "Disert Egal 50 CAL(Clone)":
                 ammoMax = 7 * dub;
                 poolCap = 63 * dub;
                 break;
-            case "Skorpion VZ":
+            case "Skorpion VZ(Clone)":
                 ammoMax = 20 * dub;
                 poolCap = 240 * dub;
                 break;
-            case "Enfield":
+            case "Enfield(Clone)":
                 ammoMax = 10 * dub;
                 poolCap = 110 * dub;
                 break;
-            case "ak74m":
+            case "ak74m(Clone)":
                 ammoMax = 30 * dub;
                 poolCap = 300 * dub;
                 break;
-            case "AK12":
+            case "AK12(Clone)":
                 ammoMax = 30 * dub;
                 poolCap = 300 * dub;
                 break;
-            case "thompson Variant":
+            case "thompson Variant(Clone)":
                 ammoMax = 20 * dub;
                 poolCap = 120 * dub;
                 break;
-            case "PPSh-41":
+            case "PPSh-41(Clone)":
                 ammoMax = 71 * dub;
                 poolCap = 284 * dub;
                 break;
-            case "S & W 500":
+            case "S & W 500(Clone)":
                 ammoMax = 6 * dub;
                 poolCap = 66 * dub;
                 break;
-                 case "1911":
+                 case "1911(Clone)":
                 ammoMax = 7 * dub;
                 poolCap = 42 * dub;
                 break;
-            case "Ak-47 (1)":
+            case "Ak-47 (1)(Clone)":
                 ammoMax = 30 * dub;
                 poolCap = 330 * dub;
                 break;
-            case "M4A1_PBR":
+            case "M4A1_PBR(Clone)":
                 ammoMax = 30 * dub;
                 poolCap = 330 * dub;
                 break;
-            case "SubmachineGun":
+            case "SubmachineGun(Clone)":
                 ammoMax = 32 * dub;
                 poolCap = 342 * dub;
                 break;
-            case "SVD":
+            case "SVD(Clone)":
                 ammoMax = 20;
                 poolCap = 120;
                 break;

@@ -1261,7 +1261,7 @@ MonoBehaviour:
     type: 3}
   powerup3Pre: {fileID: 3116792247480884808, guid: 387eae05f9a672141909d6d7a0eea55c,
     type: 3}
-  powerup4Pre: {fileID: 3793687844649962872, guid: 5cb861600738fa944a72e9f2dd668337,
+  powerup4Pre: {fileID: 3190082952840353856, guid: f3e40071cccb75e409cb2523d19ae98e,
     type: 3}
   dRMax: 200
 --- !u!65 &1553191189471192584
