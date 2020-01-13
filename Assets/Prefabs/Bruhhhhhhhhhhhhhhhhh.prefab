@@ -1255,11 +1255,11 @@ MonoBehaviour:
   wait: 20
   dead: 0
   deathRoll: 0
-  powerup1Pre: {fileID: 3633014007615297176, guid: a75b02a6cf815084fa40262455450410,
+  powerup1Pre: {fileID: 1728619453497436, guid: a3ccb241abd91b04fbfd683bbaaba443,
     type: 3}
-  powerup2Pre: {fileID: 2243832082766757260, guid: be2843aa94d158546be616a8818afb4b,
+  powerup2Pre: {fileID: 1853028475070527154, guid: 208ad51c66344ce478b6790aa4e934d9,
     type: 3}
-  powerup3Pre: {fileID: 8240202465439882021, guid: 974a3dd31daddbe4086542ff68157844,
+  powerup3Pre: {fileID: 3116792247480884808, guid: 387eae05f9a672141909d6d7a0eea55c,
     type: 3}
   powerup4Pre: {fileID: 3793687844649962872, guid: 5cb861600738fa944a72e9f2dd668337,
     type: 3}

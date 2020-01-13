@@ -57,15 +57,15 @@ public class Powerups : MonoBehaviour
 
         if(other.gameObject.tag == "maxAmmo")
         {
-            Debug.Log("COLLIDING WITH MAX AMMO!!!!");
+            //Debug.Log("COLLIDING WITH MAX AMMO!!!!");
             magsArray = GameObject.FindGameObjectsWithTag("Mag");
             foreach (GameObject g in magsArray)
             {
                 g.GetComponent<AmmoScript>().ammoCount = g.GetComponent<AmmoScript>().ammoMax;
                 g.GetComponent<AmmoScript>().ammoPool = g.GetComponent<AmmoScript>().poolCap;
-                Debug.Log("ran array." + g);
+                //Debug.Log("ran array." + g.transform.parent.name);
             }
-            Debug.Log("Array Over");
+            //Debug.Log("Array Over");
             Destroy(other.gameObject);
         }
 
