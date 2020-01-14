@@ -24,9 +24,12 @@ public class DoorBuy : MonoBehaviour
         if(ovrgrabbable.isGrabbed && playerpoints >= cost)
         {
             Player.GetComponent<PlayerPoints>().points -= cost;
-            for(int s = 0; s <= Spawner.Length - 1; s++)
+            if (Spawner.Length > 0)
             {
-                Spawner[s].SetActive(true);
+                for (int s = 0; s <= Spawner.Length - 1; s++)
+                {
+                    Spawner[s].SetActive(true);
+                }
             }
             if(otherside != null)
             {
