@@ -197,6 +197,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -633,6 +635,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -889,6 +893,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -1088,6 +1094,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -1735,6 +1743,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -2267,6 +2277,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -2760,6 +2772,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -3180,6 +3194,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -3318,6 +3334,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -3706,6 +3724,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -3844,6 +3864,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -4012,6 +4034,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3
@@ -4180,6 +4204,8 @@ MonoBehaviour:
   dead: 0
   zombie: {fileID: 2287176287124802384}
   instaKill: 0
+  healthSet: 0
+  spawner: {fileID: 0}
   dmgDmg: 1
   dmg1911: 2
   dmgCarbine: 3

@@ -17,7 +17,7 @@ public class EnemyHp : MonoBehaviour
     public GameObject powerup2Pre;
     public GameObject powerup3Pre;
     public GameObject powerup4Pre;
-    public int dRMax = 200;
+    public int dRMax = 4;
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -57,11 +57,6 @@ public class EnemyHp : MonoBehaviour
             {
                 StartCoroutine(death());
             }
-            
-
-            
-
-
         }
 
     }
@@ -72,7 +67,7 @@ public class EnemyHp : MonoBehaviour
             dead = true;
             Player.GetComponent<PlayerPoints>().points += 50 * Player.GetComponent<PlayerPoints>().pointMult;
             deathRoll = Random.Range(0, dRMax);
-
+            Debug.Log(deathRoll);
             if (deathRoll == 0 && Player.GetComponent<referenceScript>().powerupCap > 0)
             {
                 GameObject powerup1 = Instantiate(powerup1Pre, gameObject.transform.position, Quaternion.identity);
@@ -96,10 +91,6 @@ public class EnemyHp : MonoBehaviour
 
             yield return new WaitForSeconds(wait);
             Destroy(gameObject);
-
-
-
-
         }
     }
 }
