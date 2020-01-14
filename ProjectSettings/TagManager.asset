@@ -5,6 +5,25 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mag
+  - cantpass
+  - m4
+  - 1911
+  - deagle
+  - enfield
+  - ak47
+  - ak74
+  - Zombie
+  - maxAmmo
+  - waveClear
+  - instaKill
+  - dubPoints
+  - dubHealthAttach
+  - ammoBoostAttach
+  - fasterWalkAttach
+  - dubDmgAttach
+  - knifeAttach
+  - knife
+  - Spawner
   layers:
   - Default
   - TransparentFX

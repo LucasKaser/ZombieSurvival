@@ -15,6 +15,7 @@ public class WaveSpawner : MonoBehaviour
         public float rate;
     }
 
+    public GameObject player;
     public Wave[] waves;
     private int nextWave = 0;
     public Transform[] spawnPoints;
@@ -22,7 +23,7 @@ public class WaveSpawner : MonoBehaviour
 
     public float timeBetweenWaves = 5;
     public float waveCountDown;
-    public float waveNumber =1;
+    public int waveNumber = 1;
     public Text waveCounter;
     private float searchCountDown = 1f;
 
@@ -30,6 +31,18 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        for (int i = 0; i < spawnPoints.Length; i++)
+        {
+            if (spawnPoints[i].gameObject.activeSelf == true && !isEnabled.Contains(spawnPoints[i]))
+            {
+                isEnabled.Add(spawnPoints[i]);
+            }
+            else if (spawnPoints[i].gameObject.activeSelf == false /*&& isEnabled.Contains(spawnPoints[i])*/)
+            {
+                isEnabled.Remove(spawnPoints[i]);
+            }
+        }
         waveCountDown = timeBetweenWaves;
         if (spawnPoints.Length == 0)
         {
@@ -100,6 +113,7 @@ public class WaveSpawner : MonoBehaviour
             state = SpawnState.COUNTING;
             waveCountDown = timeBetweenWaves;
             waveNumber += 1;
+            player.GetComponent<referenceScript>().powerupCap = 4;
             waveCounter.text = "" + waveNumber;
             if (nextWave + 1 > waves.Length - 1)
             {

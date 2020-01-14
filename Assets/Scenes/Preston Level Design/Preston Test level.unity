@@ -2314,7 +2314,7 @@ PrefabInstance:
     - target: {fileID: 2466251805442141541, guid: 4900b1eae9703164d94cf264c272d217,
         type: 3}
       propertyPath: m_Name
-      value: Skorpion VZ
+      value: Skorpion VZ(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 2466251805442141541, guid: 4900b1eae9703164d94cf264c272d217,
         type: 3}
@@ -2614,7 +2614,7 @@ PrefabInstance:
     - target: {fileID: 5131170768089392871, guid: 0c418f8aeeaa7ed4aa7feaf0f1b0d21b,
         type: 3}
       propertyPath: m_Name
-      value: 1911
+      value: 1911(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 5133902665501559889, guid: 0c418f8aeeaa7ed4aa7feaf0f1b0d21b,
         type: 3}
@@ -3383,7 +3383,7 @@ PrefabInstance:
     - target: {fileID: 3879260353655494092, guid: 01da50408d413cc4c94d28753e6e2ffd,
         type: 3}
       propertyPath: m_Name
-      value: M4A1_PBR
+      value: M4A1_PBR(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 3879260353655458220, guid: 01da50408d413cc4c94d28753e6e2ffd,
         type: 3}
@@ -3546,7 +3546,7 @@ PrefabInstance:
     - target: {fileID: 4598748979486434742, guid: 1171306d4b19c6d40bef8cf00aa3f2fe,
         type: 3}
       propertyPath: m_Name
-      value: thompson Variant
+      value: thompson Variant(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 4598748979486434742, guid: 1171306d4b19c6d40bef8cf00aa3f2fe,
         type: 3}
@@ -4329,7 +4329,7 @@ PrefabInstance:
     - target: {fileID: 509592946186764608, guid: d69c81a8b06e1cf4f8786b440c2d8048,
         type: 3}
       propertyPath: m_Name
-      value: ak74m
+      value: ak74m(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 509592946186764608, guid: d69c81a8b06e1cf4f8786b440c2d8048,
         type: 3}
@@ -4531,7 +4531,7 @@ PrefabInstance:
     - target: {fileID: 2729105649520386065, guid: 3c39c8bc7c658b64aab6527a5fcef918,
         type: 3}
       propertyPath: m_Name
-      value: UMP-45
+      value: UMP-45(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 2729105649520386065, guid: 3c39c8bc7c658b64aab6527a5fcef918,
         type: 3}
@@ -5016,7 +5016,7 @@ PrefabInstance:
     - target: {fileID: 1303680099563396636, guid: ed12d1646e7a77547a43b6616061d7fd,
         type: 3}
       propertyPath: m_Name
-      value: Ak-47 (1)
+      value: Ak-47(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 1303680099563396636, guid: ed12d1646e7a77547a43b6616061d7fd,
         type: 3}
@@ -5394,7 +5394,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1866922139816864, guid: 930c2cf00d792e54fb886c57ff9b9dd2, type: 3}
       propertyPath: m_Name
-      value: Enfield (1)
+      value: Enfield(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 1866922139816864, guid: 930c2cf00d792e54fb886c57ff9b9dd2, type: 3}
       propertyPath: m_IsActive
@@ -5650,7 +5650,7 @@ PrefabInstance:
     - target: {fileID: 1247812945177877934, guid: d041c3013c92254498231ca059ab43cf,
         type: 3}
       propertyPath: m_Name
-      value: PPSh-41
+      value: PPSh-41(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 1247812945177877934, guid: d041c3013c92254498231ca059ab43cf,
         type: 3}
@@ -7028,6 +7028,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4191349968972851573, guid: 2637e5c3332e43a40835785787b706d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191349968993445862, guid: 2637e5c3332e43a40835785787b706d3,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemySpawnPoints(RedHouse&Ledge)
+      objectReference: {fileID: 0}
     - target: {fileID: 4191349970847986640, guid: 2637e5c3332e43a40835785787b706d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7088,16 +7098,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.955
       objectReference: {fileID: 0}
-    - target: {fileID: 4191349969342572695, guid: 2637e5c3332e43a40835785787b706d3,
-        type: 3}
-      propertyPath: m_Name
-      value: Behide boxes
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191349969342572695, guid: 2637e5c3332e43a40835785787b706d3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4191349969342572694, guid: 2637e5c3332e43a40835785787b706d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7112,11 +7112,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191349968993445862, guid: 2637e5c3332e43a40835785787b706d3,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemySpawnPoints(RedHouse&Ledge)
       objectReference: {fileID: 0}
     - target: {fileID: 4191349968972851572, guid: 2637e5c3332e43a40835785787b706d3,
         type: 3}
@@ -9373,6 +9368,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 4.3
       objectReference: {fileID: 0}
+    - target: {fileID: 4191349969342572695, guid: 2637e5c3332e43a40835785787b706d3,
+        type: 3}
+      propertyPath: m_Name
+      value: Behide boxes
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191349969342572695, guid: 2637e5c3332e43a40835785787b706d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4191349969483189506, guid: 2637e5c3332e43a40835785787b706d3,
         type: 3}
       propertyPath: m_Name
@@ -9733,7 +9738,7 @@ PrefabInstance:
     - target: {fileID: 9053537744334831486, guid: 734bfb03004393446a240485c56b0b7a,
         type: 3}
       propertyPath: m_Name
-      value: Disert Egal 50 CAL
+      value: Disert Egal 50 CAL(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 9053537744334831486, guid: 734bfb03004393446a240485c56b0b7a,
         type: 3}
@@ -47930,7 +47935,7 @@ PrefabInstance:
     - target: {fileID: 1406715551869129848, guid: 4c4b658d14c14f84dac3b0c9a1fe2dea,
         type: 3}
       propertyPath: m_Name
-      value: g36
+      value: g36(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 1406715551869129848, guid: 4c4b658d14c14f84dac3b0c9a1fe2dea,
         type: 3}
@@ -48073,7 +48078,7 @@ PrefabInstance:
     - target: {fileID: 860853758150261959, guid: b7ff09f8da1f35d4ea6b7f1267ae63b0,
         type: 3}
       propertyPath: m_Name
-      value: SubmachineGun
+      value: SubmachineGun(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 860853758150261959, guid: b7ff09f8da1f35d4ea6b7f1267ae63b0,
         type: 3}

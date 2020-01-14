@@ -62,8 +62,9 @@ public class ColaEquivalent : MonoBehaviour
                     attachPoint = GameObject.FindGameObjectWithTag("ammoBoostAttach");
                     break;
             }
+            gameObject.SetActive(false);
         }
-        gameObject.SetActive(false);
+        
         if (!ovrgrabbable.isGrabbed)
         {
             transform.position = attachPoint.transform.position;

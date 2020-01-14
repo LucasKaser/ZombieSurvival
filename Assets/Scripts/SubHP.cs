@@ -12,6 +12,8 @@ public class SubHP : MonoBehaviour
     public bool dead;
     public GameObject zombie;
     public bool instaKill = false;
+    public bool healthSet = false;
+    public GameObject spawner;
 
     //dmg int and multipliers
     public int dmgDmg = 1;
@@ -30,6 +32,7 @@ public class SubHP : MonoBehaviour
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        spawner = GameObject.FindGameObjectWithTag("Spawner");
         dmgMult = Player.GetComponent<referenceScript>().dmgMult * ifInsta;
     }
     private void OnCollisionEnter(Collision collision)
@@ -111,6 +114,11 @@ public class SubHP : MonoBehaviour
     }
     private void Update()
     {
+        if(healthSet == false)
+        {
+            health = (5 + spawner.GetComponent<WaveSpawner>().waveNumber);
+            healthSet = true;
+        }
         Player = GameObject.FindGameObjectWithTag("Player");
 
         dmgMult = Player.GetComponent<referenceScript>().dmgMult * ifInsta;
