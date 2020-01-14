@@ -29,7 +29,7 @@ public class PlayerHP : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.tag == "Zombie" && wait>= 0.3 && other.gameObject.GetComponent<EnemyHp>().dead == false)
+        if(other.gameObject.tag == "Zombie" && wait>= 0.1 && other.gameObject.GetComponent<EnemyHp>().dead == false)
         {
             wait = 0;
             health--;
