@@ -8,7 +8,7 @@ public class DoorBuy : MonoBehaviour
     private OVRGrabbable ovrgrabbable;
     public int playerpoints;
     public int cost;
-    public GameObject Spawner;
+    public GameObject[] Spawner;
     public GameObject otherside;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,10 @@ public class DoorBuy : MonoBehaviour
         if(ovrgrabbable.isGrabbed && playerpoints >= cost)
         {
             Player.GetComponent<PlayerPoints>().points -= cost;
-            Spawner.SetActive(true);
+            for(int s = 0; s <= Spawner.Length - 1; s++)
+            {
+                Spawner[s].SetActive(true);
+            }
             if(otherside != null)
             {
                 Destroy(otherside);
