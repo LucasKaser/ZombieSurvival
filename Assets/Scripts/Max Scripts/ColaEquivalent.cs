@@ -63,6 +63,7 @@ public class ColaEquivalent : MonoBehaviour
                     break;
             }
         }
+        gameObject.SetActive(false);
         if (!ovrgrabbable.isGrabbed)
         {
             transform.position = attachPoint.transform.position;
