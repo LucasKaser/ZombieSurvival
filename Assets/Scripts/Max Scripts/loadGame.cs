@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class loadGame : MonoBehaviour
-{    
+{
+    public GameObject cube;
+    public GameObject otherCube;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,13 @@ public class loadGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SceneManager.LoadScene("Map_v2");
+        if(cube.activeSelf == true)
+        {
+            SceneManager.LoadScene("Map_v2");
+        }
+        if(otherCube.activeSelf == true)
+        {
+            Application.Quit();
+        }
     }
 }

@@ -16,7 +16,7 @@ public class PlayerHP : MonoBehaviour
     public int healthre;
     public Text Health;
     public float colaMult = 1;
-   
+    public GameObject spawner;
      
     
 
@@ -25,6 +25,7 @@ public class PlayerHP : MonoBehaviour
     {
         healthre = 3;
         health = maxHealth;
+        spawner = GameObject.FindGameObjectWithTag("Spawner");
     }
 
     private void OnTriggerStay(Collider other)
@@ -36,6 +37,8 @@ public class PlayerHP : MonoBehaviour
             waiting = 0;
             if (health <= 0)
             {
+                PlayerPrefs.SetInt("Points", gameObject.GetComponent<PlayerPoints>().points);
+                PlayerPrefs.SetInt("wave", spawner.GetComponent<WaveSpawner>().waveNumber);
                 SceneManager.LoadScene("Preston Test Level");
             }
 
