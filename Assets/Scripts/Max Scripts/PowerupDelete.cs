@@ -16,4 +16,11 @@ public class PowerupDelete : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            Destroy(gameObject, 0.1f);
+        }
+    }
 }
