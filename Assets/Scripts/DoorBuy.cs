@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class DoorBuy : MonoBehaviour
 {
     public GameObject Player;
@@ -10,11 +10,13 @@ public class DoorBuy : MonoBehaviour
     public int cost;
     public GameObject[] Spawner;
     public GameObject otherside;
+    public Text costText;
     // Start is called before the first frame update
     void Start()
     {
         ovrgrabbable = GetComponent<OVRGrabbable>();
         Player = GameObject.FindGameObjectWithTag("Player");
+        costText.text = "" + cost;
     }
 
     // Update is called once per frame
