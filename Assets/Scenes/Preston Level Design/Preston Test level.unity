@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.45061642, g: 0.50058925, b: 0.5750057, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,7 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 112000001, guid: 86e619b3dcff8dd448cdd6a2c17c1411,
+  m_LightingDataAsset: {fileID: 112000002, guid: b2096a5c2235a0a48a9af9a3a42f4b87,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -1108,6 +1108,7 @@ MonoBehaviour:
   Spawner:
   - {fileID: 369938679}
   otherside: {fileID: 1116582177}
+  costText: {fileID: 0}
 --- !u!54 &363176499
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2770,6 +2771,7 @@ MonoBehaviour:
   Spawner:
   - {fileID: 0}
   otherside: {fileID: 1116582177}
+  costText: {fileID: 0}
 --- !u!135 &658583051
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3654,6 +3656,7 @@ MonoBehaviour:
   cost: 500
   Spawner: []
   otherside: {fileID: 363176493}
+  costText: {fileID: 0}
 --- !u!135 &1116582180
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5042,6 +5045,11 @@ PrefabInstance:
     - target: {fileID: 1031314130, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
       propertyPath: points
       value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932875426745457063, guid: dfd67b2a633ebba4e86782dcfb0202b2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd67b2a633ebba4e86782dcfb0202b2, type: 3}
