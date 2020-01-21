@@ -119,7 +119,7 @@ Material:
     - _SpecIntensity: 2.3
     - _Transparency: 0.95
     - _WaveFreq: 20
-    - _WaveHeight: 0.25
+    - _WaveHeight: 0.06
     - _WavePower: 1.4029856
     - _WaveScale: 0.058
     - _fogEnd: 400
